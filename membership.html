@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership - Chess Masters</title>
+    <meta name="description" content="Compare premium membership plans at Chess Masters Club. Gain access to luxury clubrooms, tournament discounts, and grandmaster lectures.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    <!-- Open Graph / SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chessmasters.com/">
+    <meta property="og:image" content="assets/images/hero-1.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Site Header -->
+    <header id="main-header">
+        <div class="header-container container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50,15 L53,23 L61,23 L55,28 L57,36 L50,31 L43,36 L45,28 L39,23 L47,23 Z" />
+                    <path d="M35,40 L65,40 L62,48 L38,48 Z" />
+                    <rect x="42" y="48" width="16" height="24" rx="2" />
+                    <path d="M30,76 L70,76 L66,84 L34,84 Z" />
+                    <rect x="25" y="84" width="50" height="4" />
+                </svg>
+                <div class="logo-text">CHESS<span class="logo-accent">MASTERS</span></div>
+            </a>
+
+            <nav class="nav-menu" id="primary-navigation">
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle">
+                        Home <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="index.html" class="nav-dropdown-item">Masters Of Strategy</a>
+                        <a href="home-2.html" class="nav-dropdown-item">Championship Mindset</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="tournaments.html" class="nav-link">Tournaments</a>
+                <a href="coaching.html" class="nav-link">Coaching</a>
+                <a href="membership.html" class="nav-link active">Membership</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <!-- Mobile Theme & RTL Toggles (only visible in mobile menu) -->
+                <div class="nav-menu-controls">
+                    <button class="control-btn theme-toggle-btn" title="Toggle Theme"><i class="fas fa-sun"></i></button>
+                    <button class="control-btn rtl-toggle-btn" title="Toggle RTL"><i class="fas fa-right-left"></i></button>
+                </div>
+            <!-- Mobile Join Club (last in menu) -->
+            <div class="nav-menu-join-btn" style="display:none;">
+                <a href="signup.html" class="btn btn-primary" style="width:100%; text-align:center;">Join Club</a>
+            </div>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="control-btn theme-toggle-btn" title="Toggle Theme"><i class="fas fa-sun"></i></button>
+                <button class="control-btn rtl-toggle-btn" title="Toggle RTL"><i class="fas fa-right-left"></i></button>
+                <a href="signup.html" class="btn btn-primary">Join Club</a>
+                <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Subpage Hero -->
+    <section class="hero" style="min-height: auto; padding: 160px 0 80px 0; text-align: center; background-color: var(--bg-secondary);">
+        <div class="container">
+            <span class="hero-tag">Enrollment Options</span>
+            <h1 style="margin-bottom: 1rem;">Club Membership Plans</h1>
+            <p style="margin: 0 auto; max-width: 600px;">Unlock access to premium clubrooms, DGT sensor boards, database libraries, and entry discounts for FIDE-rated championships.</p>
+        </div>
+    </section>
+
+    <!-- Membership Plans Grid -->
+    <section id="pricing-plans">
+        <div class="container">
+            <div class="pricing-grid">
+                <!-- Tier 1 -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Aspirant</h3>
+                        <div class="pricing-price">$29<span>/mo</span></div>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Ideal for hobbyists and casual social players.</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Standard Clubhouse Access (Wed-Sun)</li>
+                        <li><i class="fas fa-check"></i> Participation in Weekly Casual Nights</li>
+                        <li><i class="fas fa-check"></i> Access to Club Library Book Archives</li>
+                        <li class="disabled"><i class="fas fa-times"></i> FIDE Rated Tournament Entry Discounts</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Grandmaster Group Lectures</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Custom Performance Profiling</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary" style="width: 100%; margin-top: 1.5rem;" data-open-modal="join-club-modal">Choose Aspirant</a>
+                </div>
+
+                <!-- Tier 2 -->
+                <div class="pricing-card premium">
+                    <span class="pricing-badge">RECOMMENDED</span>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Contender</h3>
+                        <div class="pricing-price">$59<span>/mo</span></div>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; opacity: 0.8;">For active competitors seeking FIDE norms.</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Full Clubhouse Access (7 Days a week)</li>
+                        <li><i class="fas fa-check"></i> Weekly Grandmaster Lectures</li>
+                        <li><i class="fas fa-check"></i> 25% Discount on Tournament Fees</li>
+                        <li><i class="fas fa-check"></i> Digital Chess Engines & Databases Access</li>
+                        <li><i class="fas fa-check"></i> Custom Performance Profiling</li>
+                        <li class="disabled"><i class="fas fa-times"></i> In-house 1-on-1 private tuition hours</li>
+                    </ul>
+                    <a href="#" class="btn btn-premium" style="width: 100%; margin-top: 1.5rem;" data-open-modal="join-club-modal">Choose Contender</a>
+                </div>
+
+                <!-- Tier 3 -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Championship</h3>
+                        <div class="pricing-price">$99<span>/mo</span></div>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Elite training package for future masters.</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Full Clubhouse Access + Silent Rooms</li>
+                        <li><i class="fas fa-check"></i> 4 Hours / Month Private 1-on-1 Tuition</li>
+                        <li><i class="fas fa-check"></i> 50% Discount on all tournament entries</li>
+                        <li><i class="fas fa-check"></i> Custom opening database curation</li>
+                        <li><i class="fas fa-check"></i> Complete engine simulation server access</li>
+                        <li><i class="fas fa-check"></i> Invitation to Elite Grandmaster Dinners</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary" style="width: 100%; margin-top: 1.5rem;" data-open-modal="join-club-modal">Choose Championship</a>
+                </div>
+            </div>
+
+            <!-- Detailed Benefits Comparison Table -->
+            <div class="comparison-wrapper">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Detailed Feature Matrix</h2>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Club Privileges</th>
+                            <th>Aspirant</th>
+                            <th>Contender</th>
+                            <th>Championship</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="feature-col">Clubhouse Entry Time</td>
+                            <td>Wed-Sun, 4pm-10pm</td>
+                            <td>7 Days, 8am-11pm</td>
+                            <td>24/7 Keycard Access</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-col">FIDE rated Tournament Discounts</td>
+                            <td><i class="fas fa-times"></i> None</td>
+                            <td>25% Off Entry Fees</td>
+                            <td>50% Off Entry Fees</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-col">Weekly Lectures Access</td>
+                            <td><i class="fas fa-times"></i> No</td>
+                            <td>Standard Group Class</td>
+                            <td>Standard + Advanced Group</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-col">Private 1-on-1 Mentorship</td>
+                            <td><i class="fas fa-times"></i> No</td>
+                            <td>Paid hourly extra</td>
+                            <td>4 Hours/mo included</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-col">Interactive DGT Sensor Boards</td>
+                            <td><i class="fas fa-times"></i> No</td>
+                            <td><i class="fas fa-check"></i> Yes</td>
+                            <td><i class="fas fa-check"></i> Yes</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-col">Member Annual Banquet</td>
+                            <td><i class="fas fa-times"></i> No</td>
+                            <td><i class="fas fa-times"></i> No</td>
+                            <td><i class="fas fa-check"></i> Yes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Member Testimonials Section -->
+    <section id="member-testimonials" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Success Stories</span>
+                <h2 class="section-title">What Our Members Say</h2>
+                <p class="section-subtitle">Real experiences from dedicated chess players across all skill levels.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card" style="padding: 2rem;">
+                    <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1.5rem;">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&q=80" alt="Member testimonial" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                        <div>
+                            <h4 style="font-weight: 600; margin-bottom: 0.25rem;">James Wilson</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Contender Member</p>
+                        </div>
+                    </div>
+                    <p style="font-style: italic; color: var(--text-secondary);">\"The coaching here transformed my game. I went from 1400 to 1850 ELO in just 18 months. The facilities are world-class!\"</p>
+                    <div style="margin-top: 1rem; color: var(--accent-primary);">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="card" style="padding: 2rem;">
+                    <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1.5rem;">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Member testimonial" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                        <div>
+                            <h4 style="font-weight: 600; margin-bottom: 0.25rem;">Emma Rodriguez</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Championship Member</p>
+                        </div>
+                    </div>
+                    <p style="font-style: italic; color: var(--text-secondary);">\"I achieved my first International Master norm here. The intensive training programs and private sessions are unmatched. Highly recommended!\"</p>
+                    <div style="margin-top: 1rem; color: var(--accent-primary);">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="card" style="padding: 2rem;">
+                    <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1.5rem;">
+                        <img src="https://images.unsplash.com/photo-1517654443271-a3a7417b4b0f?auto=format&fit=crop&w=100&q=80" alt="Member testimonial" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                        <div>
+                            <h4 style="font-weight: 600; margin-bottom: 0.25rem;">Marcus Chen</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Aspirant Member</p>
+                        </div>
+                    </div>
+                    <p style="font-style: italic; color: var(--text-secondary);">\"Perfect for beginners like me! Everyone is welcoming, the weekly social nights are fun, and I've made great friends. Chess has become my passion!\"</p>
+                    <div style="margin-top: 1rem; color: var(--accent-primary);">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers & Benefits Section -->
+    <section id="special-benefits">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Exclusive Perks</span>
+                <h2 class="section-title">Additional Member Benefits</h2>
+                <p class="section-subtitle">Unlock extra advantages with your membership subscription.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card" style="padding: 2rem;">
+                    <h3 style="margin-bottom: 1rem; font-size: 1.25rem;">
+                        <i class="fas fa-book" style="color: var(--accent-primary); margin-right: 0.75rem;"></i>
+                        Access to Digital Chess Libraries
+                    </h3>
+                    <p style="margin-bottom: 1rem;">Unlimited access to our comprehensive chess opening databases, endgame tablebases, and annotated game collections from world champions.</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> 500,000+ annotated games</li>
+                        <li><i class="fas fa-check-circle"></i> Neural engine analysis tools</li>
+                        <li><i class="fas fa-check-circle"></i> Opening preparation downloads</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="padding: 2rem;">
+                    <h3 style="margin-bottom: 1rem; font-size: 1.25rem;">
+                        <i class="fas fa-users" style="color: var(--accent-primary); margin-right: 0.75rem;"></i>
+                        Community & Networking
+                    </h3>
+                    <p style="margin-bottom: 1rem;">Connect with fellow chess enthusiasts, participate in exclusive member-only tournaments, and build lasting friendships.</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> Monthly member socials</li>
+                        <li><i class="fas fa-check-circle"></i> Private Discord community</li>
+                        <li><i class="fas fa-check-circle"></i> Mentorship programs</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="padding: 2rem;">
+                    <h3 style="margin-bottom: 1rem; font-size: 1.25rem;">
+                        <i class="fas fa-video" style="color: var(--accent-primary); margin-right: 0.75rem;"></i>
+                        Video Masterclasses
+                    </h3>
+                    <p style="margin-bottom: 1rem;">On-demand video courses and live masterclasses from International Masters and Grandmasters covering all aspects of the game.</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> 50+ video courses</li>
+                        <li><i class="fas fa-check-circle"></i> Live Q&A sessions</li>
+                        <li><i class="fas fa-check-circle"></i> Downloadable materials</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="padding: 2rem;">
+                    <h3 style="margin-bottom: 1rem; font-size: 1.25rem;">
+                        <i class="fas fa-shopping-bag" style="color: var(--accent-primary); margin-right: 0.75rem;"></i>
+                        Member Merchandise & Discounts
+                    </h3>
+                    <p style="margin-bottom: 1rem;">Exclusive discounts on chess equipment, books, and premium subscriptions to online chess platforms.</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> 15-20% equipment discounts</li>
+                        <li><i class="fas fa-check-circle"></i> Free premium e-books</li>
+                        <li><i class="fas fa-check-circle"></i> Partner platform discounts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50,15 L53,23 L61,23 L55,28 L57,36 L50,31 L43,36 L45,28 L39,23 L47,23 Z" />
+                        <path d="M35,40 L65,40 L62,48 L38,48 Z" />
+                        <rect x="42" y="48" width="16" height="24" rx="2" />
+                        <path d="M30,76 L70,76 L66,84 L34,84 Z" />
+                        <rect x="25" y="84" width="50" height="4" />
+                    </svg>
+                    <div class="logo-text" style="font-size: 1.25rem;">CHESS<span class="logo-accent" style="font-size: 1.25rem;">MASTERS</span></div>
+                </a>
+                <p class="footer-desc">A prestigious international club fostering competition, strategy, and intellectual excellence since 1998.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Explore</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Club</a></li>
+                    <li><a href="tournaments.html">Tournaments</a></li>
+                    <li><a href="coaching.html">Coaching Pathways</a></li>
+                    <li><a href="membership.html">Membership Plans</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog & Strategy</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="coming-soon.html">FIDE Rules</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Grandmaster HQ</h4>
+                <div class="footer-contact">
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>12 Royal Chess St, Grandmaster District, London, UK</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+44 (20) 7946 0958</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>office@chessmasters.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Chess Masters Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="join-club-modal">
+        <div class="modal-content">
+            <span class="modal-close"><i class="fas fa-times"></i></span>
+            <h3 class="modal-title">Join Chess Masters</h3>
+            <p class="modal-subtitle">Enroll as a player in our community to unlock complete member privileges.</p>
+            <form>
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Select Membership Plan</label>
+                    <select class="form-control">
+                        <option>Aspirant Plan ($29/mo)</option>
+                        <option>Contender Plan ($59/mo)</option>
+                        <option>Championship Plan ($99/mo)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Enrollment</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="register-tournament-modal">
+        <div class="modal-content">
+            <span class="modal-close"><i class="fas fa-times"></i></span>
+            <h3 class="modal-title">Tournament Registration</h3>
+            <p class="modal-subtitle">Reserve your seat. Matches require official check-in 30 mins before pairing.</p>
+            <form>
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">FIDE ID (Optional)</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Select Tournament</label>
+                    <select class="form-control">
+                        <option>Summer Classical Open (July 15)</option>
+                        <option>Grandmaster Blitz Arena (August 02)</option>
+                        <option>Under-16 Masters Challenge (August 12)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-premium" style="width: 100%;">Register & Check-In</button>
+            </form>
+        </div>
+    </div>
+
+    <button id="scroll-to-top-btn" class="scroll-top-btn" title="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

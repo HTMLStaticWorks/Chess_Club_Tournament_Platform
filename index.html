@@ -1,1 +1,528 @@
-hello
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Masters - Premier Club & Tournament Platform</title>
+    <meta name="description"
+        content="Join Chess Masters, the leading international club featuring FIDE-rated tournaments, Grandmaster coaching, and junior player development.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    <!-- Open Graph / SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chessmasters.com/">
+    <meta property="og:image" content="assets/images/hero-1.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Site Header -->
+    <header id="main-header">
+        <div class="header-container container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- King Chess Piece Silhouette SVG -->
+                    <path d="M50,15 L53,23 L61,23 L55,28 L57,36 L50,31 L43,36 L45,28 L39,23 L47,23 Z" />
+                    <path d="M35,40 L65,40 L62,48 L38,48 Z" />
+                    <rect x="42" y="48" width="16" height="24" rx="2" />
+                    <path d="M30,76 L70,76 L66,84 L34,84 Z" />
+                    <rect x="25" y="84" width="50" height="4" />
+                </svg>
+                <div class="logo-text">CHESS<span class="logo-accent">MASTERS</span></div>
+            </a>
+
+            <nav class="nav-menu" id="primary-navigation">
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle active">
+                        Home <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="index.html" class="nav-dropdown-item active">Masters Of Strategy</a>
+                        <a href="home-2.html" class="nav-dropdown-item">Championship Mindset</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="tournaments.html" class="nav-link">Tournaments</a>
+                <a href="coaching.html" class="nav-link">Coaching</a>
+                <a href="membership.html" class="nav-link">Membership</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <!-- Mobile Join Club (last in menu) -->
+                <div class="nav-menu-join-btn" style="display:none;">
+                    <a href="signup.html" class="btn btn-primary" style="width:100%; text-align:center;">Join Club</a>
+                </div>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="control-btn theme-toggle-btn" title="Toggle Theme"><i class="fas fa-sun"></i></button>
+                <button class="control-btn rtl-toggle-btn" title="Toggle RTL"><i class="fas fa-right-left"></i></button>
+                <a href="signup.html" class="btn btn-primary">Join Club</a>
+                <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero-home">
+        <!-- SVG Path Trails for Chess Pieces -->
+        <div class="chess-svg-container">
+            <svg width="100%" height="100%" viewBox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 100,600 Q 300,200 600,500 T 1200,200" class="animated-path" />
+                <path d="M 200,100 Q 500,700 800,200 T 1300,600" class="animated-path" style="animation-delay: -5s;" />
+            </svg>
+        </div>
+
+        <div class="container grid-2">
+            <div class="hero-content">
+                <span class="hero-tag">Masters Of Strategy</span>
+                <h1>Every Great Move Begins With A Better Strategy</h1>
+                <p>Join a thriving chess community featuring FIDE-rated tournaments, structured coaching programs, and
+                    competitive opportunities for players of all levels.</p>
+                <div class="hero-btns">
+                    <a href="tournaments.html" class="btn btn-secondary">Explore Tournaments</a>
+                </div>
+            </div>
+            <div class="legacy-img-wrapper" style="z-index: 2;">
+                <img src="assets/images/hero-1.png" alt="Championship Chess Tournament Hall" class="legacy-img">
+                <div class="legacy-overlay">
+                    <h3 style="font-family: var(--font-accent); color: var(--accent-secondary); letter-spacing: 2px;">
+                        WORLD CHAMPIONSHIP VENUE</h3>
+                    <p style="color: #F8FAFC; font-size: 0.9rem;">Experience luxury clubrooms and professional standard
+                        FIDE tournament halls.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Club Legacy Section -->
+    <section id="club-legacy" style="background-color: var(--bg-secondary);">
+        <div class="container grid-2">
+            <div class="legacy-img-wrapper">
+                <img src="assets/images/hero-2.png" alt="Ornate Ebony King Piece" class="legacy-img">
+            </div>
+            <div>
+                <span class="section-tag">Our Legacy</span>
+                <h2 class="section-title">A Heritage of Intellectual Brilliance</h2>
+                <p style="margin-bottom: 1.5rem;">Founded in 1998, Chess Masters Club has served as a premier institute
+                    of excellence, producing 14 Grandmasters and hosting international chess invitationals that draw top
+                    world players.</p>
+                <p style="margin-bottom: 2rem;">We are dedicated to building critical thinking, foresight, and tactical
+                    precision. Whether you are a beginner picking up the rules, a junior developing tactical vision, or
+                    an experienced master preparing for FIDE rated battles, we offer the optimal breeding ground.</p>
+                <div style="display: flex; gap: 2rem;">
+                    <div>
+                        <h4 style="color: var(--accent-primary); font-size: 1.25rem; margin-bottom: 0.5rem;"><i
+                                class="fas fa-chess-knight"></i> FIDE Certified</h4>
+                        <p style="font-size: 0.9rem;">Fully compliant tournament formats and certified arbiter panels.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--accent-primary); font-size: 1.25rem; margin-bottom: 0.5rem;"><i
+                                class="fas fa-chess-queen"></i> Elite Coaching</h4>
+                        <p style="font-size: 0.9rem;">Mentorship directly from International Masters & Grandmasters.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Tournaments Section -->
+    <section id="upcoming-tournaments">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Competition</span>
+                <h2 class="section-title">Upcoming Championships</h2>
+                <p class="section-subtitle">Test your skills in official events. Register early to guarantee pairing
+                    seats.</p>
+            </div>
+
+            <div class="grid-3">
+                <!-- Tournament 1 -->
+                <div class="card tournament-card">
+                    <span class="tournament-badge">FIDE RATED</span>
+                    <h3 class="card-title" style="margin-top: 1rem;">Summer Classical Open</h3>
+                    <p class="card-desc">Classical time-controls with complete notation requirements. Standard ELO
+                        calculation.</p>
+                    <div class="tournament-meta">
+                        <div class="meta-item"><i class="far fa-calendar-alt"></i> July 15 - July 18, 2026</div>
+                        <div class="meta-item"><i class="fas fa-trophy"></i> Prize Pool: $5,000</div>
+                        <div class="meta-item"><i class="fas fa-map-marker-alt"></i> Main Grand Hall</div>
+                    </div>
+                    <a href="tournament-details.html" class="btn btn-secondary" style="margin-top: 1.5rem;">View
+                        Details</a>
+                </div>
+
+                <!-- Tournament 2 -->
+                <div class="card tournament-card">
+                    <span class="tournament-badge">BLITZ</span>
+                    <h3 class="card-title" style="margin-top: 1rem;">Grandmaster Blitz Arena</h3>
+                    <p class="card-desc">Fast-paced 3+2 blitz tournament. Dynamic double-round pairings across 9 swiss
+                        rounds.</p>
+                    <div class="tournament-meta">
+                        <div class="meta-item"><i class="far fa-calendar-alt"></i> August 02, 2026</div>
+                        <div class="meta-item"><i class="fas fa-trophy"></i> Prize Pool: $2,500</div>
+                        <div class="meta-item"><i class="fas fa-map-marker-alt"></i> Blitz Arena Room</div>
+                    </div>
+                    <a href="tournament-details.html" class="btn btn-secondary" style="margin-top: 1.5rem;">View
+                        Details</a>
+                </div>
+
+                <!-- Tournament 3 -->
+                <div class="card tournament-card">
+                    <span class="tournament-badge">JUNIOR</span>
+                    <h3 class="card-title" style="margin-top: 1rem;">Under-16 Masters</h3>
+                    <p class="card-desc">Encouraging school chess champions. Focus on age categories U12, U14, and U16.
+                    </p>
+                    <div class="tournament-meta">
+                        <div class="meta-item"><i class="far fa-calendar-alt"></i> August 12, 2026</div>
+                        <div class="meta-item"><i class="fas fa-trophy"></i> Scholarships & Medals</div>
+                        <div class="meta-item"><i class="fas fa-map-marker-alt"></i> Junior Hall</div>
+                    </div>
+                    <a href="tournament-details.html" class="btn btn-secondary" style="margin-top: 1.5rem;">View
+                        Details</a>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <a href="tournaments.html" class="btn btn-primary">Browse All Tournaments</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coaching Programs preview -->
+    <section id="coaching-preview" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Learn & Master</span>
+                <h2 class="section-title">Coaching Programs</h2>
+                <p class="section-subtitle">Structured paths for cognitive development and deep positional mastery.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card">
+                    <div class="coaching-img-wrapper"
+                        style="margin-bottom: 1.5rem; border-radius: 4px; overflow: hidden; aspect-ratio: 16/9;">
+                        <img src="assets/images/beginner.jpg" alt="Beginner Pathways"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 class="card-title">Beginner Pathways</h3>
+                    <p class="card-desc">Rules of engagement, basic piece values, coordinate reading, and essential
+                        checkmating patterns.</p>
+                    <a href="coaching.html" style="font-weight: 600;">Learn More <i class="fas fa-arrow-right"
+                            style="font-size: 0.8rem; margin-left: 0.25rem;"></i></a>
+                </div>
+                <div class="card">
+                    <div class="coaching-img-wrapper"
+                        style="margin-bottom: 1.5rem; border-radius: 4px; overflow: hidden; aspect-ratio: 16/9;">
+                        <img src="assets/images/intermediate.jpg" alt="Intermediate Strategy"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 class="card-title">Intermediate Strategy</h3>
+                    <p class="card-desc">Opening principles, middle-game tactics, tactical motifs, pawn structures, and
+                        basic endgames.</p>
+                    <a href="coaching.html" style="font-weight: 600;">Learn More <i class="fas fa-arrow-right"
+                            style="font-size: 0.8rem; margin-left: 0.25rem;"></i></a>
+                </div>
+                <div class="card">
+                    <div class="coaching-img-wrapper"
+                        style="margin-bottom: 1.5rem; border-radius: 4px; overflow: hidden; aspect-ratio: 16/9;">
+                        <img src="assets/images/elite.jpg" alt="Elite GM Training"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 class="card-title">Elite GM Training</h3>
+                    <p class="card-desc">Complex endgame calculations, opening repertoire building, tournament
+                        psychology, and game analysis.</p>
+                    <a href="coaching.html" style="font-weight: 600;">Learn More <i class="fas fa-arrow-right"
+                            style="font-size: 0.8rem; margin-left: 0.25rem;"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Benefits Section -->
+    <section id="membership-benefits">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Privileges</span>
+                <h2 class="section-title">Membership Benefits</h2>
+                <p class="section-subtitle">Become a member of Chess Masters to unlock high-tier strategic support.</p>
+            </div>
+
+            <div class="grid-4">
+                <div class="card" style="padding: 1.5rem 2rem;">
+                    <i class="fas fa-clock"
+                        style="font-size: 2rem; color: var(--accent-primary); margin-bottom: 1rem;"></i>
+                    <h4 style="margin-bottom: 0.5rem;">24/7 Access</h4>
+                    <p style="font-size: 0.9rem;">Clubhouse rooms, boards, and digital chess engines available anytime.
+                    </p>
+                </div>
+                <div class="card" style="padding: 1.5rem 2rem;">
+                    <i class="fas fa-percent"
+                        style="font-size: 2rem; color: var(--accent-primary); margin-bottom: 1rem;"></i>
+                    <h4 style="margin-bottom: 0.5rem;">Event Discounts</h4>
+                    <p style="font-size: 0.9rem;">25% discount on all FIDE tournament entry registrations.</p>
+                </div>
+                <div class="card" style="padding: 1.5rem 2rem;">
+                    <i class="fas fa-users"
+                        style="font-size: 2rem; color: var(--accent-primary); margin-bottom: 1rem;"></i>
+                    <h4 style="margin-bottom: 0.5rem;">Weekly Socials</h4>
+                    <p style="font-size: 0.9rem;">Casual club nights, lightning chess arenas, and analysis meetings.</p>
+                </div>
+                <div class="card" style="padding: 1.5rem 2rem;">
+                    <i class="fas fa-book-open"
+                        style="font-size: 2rem; color: var(--accent-primary); margin-bottom: 1rem;"></i>
+                    <h4 style="margin-bottom: 0.5rem;">Chess Library</h4>
+                    <p style="font-size: 0.9rem;">Extensive archive of chess literature, books, and analysis files.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <div class="stats-banner">
+        <div class="container stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" data-target="500" data-suffix="+">0</div>
+                <div class="stat-title">Active Members</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="150" data-suffix="+">0</div>
+                <div class="stat-title">Tournaments Hosted</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="14">0</div>
+                <div class="stat-title">Grandmasters Produced</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="25" data-suffix="K">0</div>
+                <div class="stat-title">Prize Pool Awarded ($)</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">Community Testimonials</h2>
+                <p class="section-subtitle">What chess players say about our elite club culture.</p>
+            </div>
+
+            <div class="testimonial-carousel">
+                <!-- Slide 1 -->
+                <div class="testimonial-slide active">
+                    <p class="testimonial-quote">"The premium halls and rigorous FIDE events here allowed me to earn my
+                        final IM norm. The chess community is focused, respectful, and highly competitive."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+                            alt="Alexander Mercer" class="author-img">
+                        <div class="author-info">
+                            <h4 class="author-name">Alexander Mercer</h4>
+                            <p class="author-role">International Master (FIDE Rating 2420)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="testimonial-slide">
+                    <p class="testimonial-quote">"The Junior Academy has completely transformed my son's game. His
+                        calculations are sharp, and his school academic performance has spiked from structured
+                        thinking."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80"
+                            alt="Sarah Jenkins" class="author-img">
+                        <div class="author-info">
+                            <h4 class="author-name">Sarah Jenkins</h4>
+                            <p class="author-role">Parent of Junior Champion</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="testimonial-slide">
+                    <p class="testimonial-quote">"An intellectual sanctuary. Toggling from hard corporate work to chess
+                        board positional strategies under warm lighting is the perfect reset. Highly recommended."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80"
+                            alt="Jonathan Vance" class="author-img">
+                        <div class="author-info">
+                            <h4 class="author-name">Jonathan Vance</h4>
+                            <p class="author-role">Club Member since 2021</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join The Club CTA -->
+    <section id="cta-join" style="position: relative; overflow: hidden; padding: 120px 0; text-align: center;">
+        <!-- Luxury overlay image -->
+        <div
+            style="position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(rgba(15, 17, 23, 0.9), rgba(15, 17, 23, 0.9)), url('assets/images/hero-1.png') center/cover; opacity: 0.8; z-index: 1;">
+        </div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <span class="section-tag" style="color: var(--accent-secondary);">Join Our Ranks</span>
+            <h2 class="section-title" style="color: #F8FAFC; font-size: 3rem;">Ready to Make Your Move?</h2>
+            <p style="color: #C8D0DB; max-width: 600px; margin: 0 auto 2.5rem auto; font-size: 1.1rem;">Register for
+                tournaments, apply for master coaching programs, or start your club membership enrollment today.</p>
+            <div class="hero-btns" style="justify-content: center;">
+                <a href="#" class="btn btn-premium btn-lg" data-open-modal="join-club-modal">Enroll As Member</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50,15 L53,23 L61,23 L55,28 L57,36 L50,31 L43,36 L45,28 L39,23 L47,23 Z" />
+                        <path d="M35,40 L65,40 L62,48 L38,48 Z" />
+                        <rect x="42" y="48" width="16" height="24" rx="2" />
+                        <path d="M30,76 L70,76 L66,84 L34,84 Z" />
+                        <rect x="25" y="84" width="50" height="4" />
+                    </svg>
+                    <div class="logo-text" style="font-size: 1.25rem;">CHESS<span class="logo-accent"
+                            style="font-size: 1.25rem;">MASTERS</span></div>
+                </a>
+                <p class="footer-desc">A prestigious international club fostering competition, strategy, and
+                    intellectual excellence since 1998.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Explore</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Club</a></li>
+                    <li><a href="tournaments.html">Tournaments</a></li>
+                    <li><a href="coaching.html">Coaching Pathways</a></li>
+                    <li><a href="membership.html">Membership Plans</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog & Strategy</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="coming-soon.html">FIDE Rules</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Grandmaster HQ</h4>
+                <div class="footer-contact">
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>12 Royal Chess St, Grandmaster District, London, UK</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+44 (20) 7946 0958</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>office@chessmasters.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Chess Masters Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Join Club Modal -->
+    <div class="modal" id="join-club-modal">
+        <div class="modal-content">
+            <span class="modal-close"><i class="fas fa-times"></i></span>
+            <h3 class="modal-title">Join Chess Masters</h3>
+            <p class="modal-subtitle">Enroll as a player in our community to unlock complete member privileges.</p>
+            <form>
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" required placeholder="Alexander Smith">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" required placeholder="alex@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Select Membership Plan</label>
+                    <select class="form-control">
+                        <option>Aspirant Plan ($29/mo)</option>
+                        <option>Contender Plan ($59/mo)</option>
+                        <option>Championship Plan ($99/mo)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Enrollment</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Tournament Modal -->
+    <div class="modal" id="register-tournament-modal">
+        <div class="modal-content">
+            <span class="modal-close"><i class="fas fa-times"></i></span>
+            <h3 class="modal-title">Tournament Registration</h3>
+            <p class="modal-subtitle">Reserve your seat. Matches require official check-in 30 mins before pairing.</p>
+            <form>
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" required placeholder="Magnus Carlsen">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">FIDE ID (Optional)</label>
+                    <input type="text" class="form-control" placeholder="12345678">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Select Tournament</label>
+                    <select class="form-control">
+                        <option>Summer Classical Open (July 15)</option>
+                        <option>Grandmaster Blitz Arena (August 02)</option>
+                        <option>Under-16 Masters Challenge (August 12)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-premium" style="width: 100%;">Register & Check-In</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top-btn" class="scroll-top-btn" title="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JS Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Championship Mindset - Chess Masters</title>
+    <meta name="description"
+        content="Embark on competitive training at Chess Masters. View tournament calendars, junior academies, and milestones of our champions.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    <!-- Open Graph / SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chessmasters.com/">
+    <meta property="og:image" content="assets/images/hero-1.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Additional chess board specific styling for Home 2 Hero */
+        .board-container {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            width: 100%;
+            max-width: 450px;
+            aspect-ratio: 1;
+            border: 8px solid var(--accent-primary);
+            border-radius: 4px;
+            box-shadow: var(--shadow-premium);
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .board-square {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+        }
+
+        .board-square.dark-sq {
+            background-color: var(--bg-secondary);
+        }
+
+        .board-square.light-sq {
+            background-color: var(--bg-card);
+        }
+
+        .board-square i {
+            color: var(--accent-primary);
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+            transition: transform var(--transition-fast);
+        }
+
+        .board-square:hover i {
+            transform: scale(1.2);
+            color: var(--accent-secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Site Header -->
+    <header id="main-header">
+        <div class="header-container container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50,15 L53,23 L61,23 L55,28 L57,36 L50,31 L43,36 L45,28 L39,23 L47,23 Z" />
+                    <path d="M35,40 L65,40 L62,48 L38,48 Z" />
+                    <rect x="42" y="48" width="16" height="24" rx="2" />
+                    <path d="M30,76 L70,76 L66,84 L34,84 Z" />
+                    <rect x="25" y="84" width="50" height="4" />
+                </svg>
+                <div class="logo-text">CHESS<span class="logo-accent">MASTERS</span></div>
+            </a>
+
+            <nav class="nav-menu" id="primary-navigation">
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle active">
+                        Home <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="index.html" class="nav-dropdown-item">Masters Of Strategy</a>
+                        <a href="home-2.html" class="nav-dropdown-item active">Championship Mindset</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="tournaments.html" class="nav-link">Tournaments</a>
+                <a href="coaching.html" class="nav-link">Coaching</a>
+                <a href="membership.html" class="nav-link">Membership</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <!-- Mobile Theme & RTL Toggles (only visible in mobile menu) -->
+                <div class="nav-menu-controls">
+                    <button class="control-btn theme-toggle-btn" title="Toggle Theme"><i
+                            class="fas fa-sun"></i></button>
+                    <button class="control-btn rtl-toggle-btn" title="Toggle RTL"><i
+                            class="fas fa-right-left"></i></button>
+                </div>
+                <!-- Mobile Join Club (last in menu) -->
+                <div class="nav-menu-join-btn" style="display:none;">
+                    <a href="signup.html" class="btn btn-primary" style="width:100%; text-align:center;">Join Club</a>
+                </div>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="control-btn theme-toggle-btn" title="Toggle Theme"><i class="fas fa-sun"></i></button>
+                <button class="control-btn rtl-toggle-btn" title="Toggle RTL"><i class="fas fa-right-left"></i></button>
+                <a href="signup.html" class="btn btn-primary">Join Club</a>
+                <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero-home2">
+        <div class="chess-svg-container">
+            <svg width="100%" height="100%" viewBox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg">
+                <!-- Move Path Trail representation -->
+                <path d="M 1200,600 Q 1000,200 700,500 T 200,200" class="animated-path"
+                    style="stroke: var(--accent-third);" />
+            </svg>
+        </div>
+
+        <div class="container grid-2">
+            <div class="hero-content">
+                <span class="hero-tag" style="color: var(--accent-third);">Championship Mindset</span>
+                <h1>Train. Compete. Master The Game.</h1>
+                <p>Develop logical thinking, build tactical patterns, and scale up your FIDE rating alongside
+                    Grandmasters in a premium competitive arena.</p>
+                <div class="hero-btns">
+                    <a href="coaching.html" class="btn btn-secondary">Coaching Pathways</a>
+                </div>
+            </div>
+
+            <!-- CSS Grid Interactive Chessboard Graphic -->
+            <div>
+                <div class="board-container">
+                    <!-- Row 8 -->
+                    <div class="board-square light-sq"><i class="fas fa-chess-rook"></i></div>
+                    <div class="board-square dark-sq"><i class="fas fa-chess-knight"></i></div>
+                    <div class="board-square light-sq"><i class="fas fa-chess-bishop"></i></div>
+                    <div class="board-square dark-sq"><i class="fas fa-chess-queen"></i></div>
+                    <div class="board-square light-sq"><i class="fas fa-chess-king"></i></div>
+                    <div class="board-square dark-sq"><i class="fas fa-chess-bishop"></i></div>
+                    <div class="board-square light-sq"></div>
+                    <div class="board-square dark-sq"><i class="fas fa-chess-rook"></i></div>
+                    <!-- Row 7 -->
+                    <div class="board-square dark-sq"><i class="fas fa-chess-pawn"></i></div>
+                    <div class="board-square light-sq"><i class="fas fa-chess-pawn"></i></div>
+                    <div class="board-square dark-sq"><i class="fas fa-chess-pawn"></i></div>
+                    <div class="board-square light-sq"></div>
+                    <div class="board-square dark-sq"></div>
+                    <div class="board-square light-sq"><i class="fas fa-chess-pawn"></i></div>
+                    <div class="board-square dark-sq"><i class="fas fa-chess-pawn"></i></div>
+                    <div class="board-square light-sq"><i class="fas fa-chess-pawn"></i></div>
+                    <!-- Row 6 -->
+                    <div class="board-square light-sq"></div>
+                    <div class="board-square dark-sq"></div>
+                    <div class="board-square light-sq"></div>
+                    <div class="board-square dark-sq"></div>
+                    <div class="board-square light-sq"></div>
+                    <div class="board-square dark-sq"><i class="fas fa-chess-knight"></i></div>
+                    <div class="board-square light-sq"></div>
+                    <div class="board-square dark-sq"></div>
+                    <!-- Row 5 -->
+                    <div class="board-square dark-sq"></div>
+                    <div class="board-square light-sq"></div>
+                    <div class="board-square dark-sq"></div>
+                    <div class="board-square light-sq"><i class="fas fa-chess-pawn"></i></div>
+                    <div class="board-square dark-sq"><i class="fas fa-chess-pawn"></i></div>
+                    <div class="board-square light-sq"></div>
+                    <div class="board-square dark-sq"></div>
+                    <div class="board-square light-sq"></div>
+                    <!-- Row 4 -->
+                    <div class="board-square light-sq"></div>
+                    <div class="board-square dark-sq"></div>
+                    <div class="board-square light-sq"></div>
+                    <div class="board-square dark-sq"></div>
+                    <div class="board-square light-sq"></div>
+                    <div class="board-square dark-sq"></div>
+                    <div class="board-square light-sq"></div>
+                    <div class="board-square dark-sq"></div>
+                    <!-- Row 3 -->
+                    <div class="board-square dark-sq"></div>
+                    <div class="board-square light-sq"></div>
+                    <div class="board-square dark-sq"><i class="fas fa-chess-knight"></i></div>
+                    <div class="board-square light-sq"></div>
+                    <div class="board-square dark-sq"></div>
+                    <div class="board-square light-sq"></div>
+                    <div class="board-square dark-sq"></div>
+                    <div class="board-square light-sq"></div>
+                    <!-- Row 2 -->
+                    <div class="board-square light-sq"><i class="fas fa-chess-pawn"></i></div>
+                    <div class="board-square dark-sq"><i class="fas fa-chess-pawn"></i></div>
+                    <div class="board-square light-sq"></div>
+                    <div class="board-square dark-sq"></div>
+                    <div class="board-square light-sq"></div>
+                    <div class="board-square dark-sq"><i class="fas fa-chess-pawn"></i></div>
+                    <div class="board-square light-sq"><i class="fas fa-chess-pawn"></i></div>
+                    <div class="board-square dark-sq"><i class="fas fa-chess-pawn"></i></div>
+                    <!-- Row 1 -->
+                    <div class="board-square dark-sq"><i class="fas fa-chess-rook"></i></div>
+                    <div class="board-square light-sq"></div>
+                    <div class="board-square dark-sq"><i class="fas fa-chess-bishop"></i></div>
+                    <div class="board-square light-sq"><i class="fas fa-chess-queen"></i></div>
+                    <div class="board-square light-sq"><i class="fas fa-chess-king"></i></div>
+                    <div class="board-square dark-sq"><i class="fas fa-chess-bishop"></i></div>
+                    <div class="board-square light-sq"><i class="fas fa-chess-knight"></i></div>
+                    <div class="board-square dark-sq"><i class="fas fa-chess-rook"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FIDE Tournament Calendar -->
+    <section id="tournament-calendar">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Grand Arena</span>
+                <h2 class="section-title">FIDE Tournament Calendar</h2>
+                <p class="section-subtitle">Plan your seasonal campaign. Select events to secure rating norms.</p>
+            </div>
+
+            <div style="overflow-x: auto;">
+                <table class="comparison-table" style="min-width: 900px;">
+                    <thead>
+                        <tr>
+                            <th>Tournament Name</th>
+                            <th>Format</th>
+                            <th>FIDE Rated</th>
+                            <th>Prize Pool</th>
+                            <th>Dates</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="feature-col">London Classical Masters</td>
+                            <td>9-Round Swiss (90+30)</td>
+                            <td><i class="fas fa-check"></i> Yes</td>
+                            <td style="color: var(--accent-primary); font-weight: 600;">$10,000</td>
+                            <td>July 20 - July 26</td>
+                            <td><a href="#" class="btn btn-secondary" style="padding: 0.5rem 1rem;"
+                                    data-open-modal="register-tournament-modal">Register</a></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-col">Royal Blitz Championship</td>
+                            <td>11-Round Swiss (3+2)</td>
+                            <td><i class="fas fa-check"></i> Yes</td>
+                            <td style="color: var(--accent-primary); font-weight: 600;">$3,500</td>
+                            <td>August 05</td>
+                            <td><a href="#" class="btn btn-secondary" style="padding: 0.5rem 1rem;"
+                                    data-open-modal="register-tournament-modal">Register</a></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-col">Junior Academy Open</td>
+                            <td>7-Round Swiss (60+10)</td>
+                            <td><i class="fas fa-check"></i> Yes</td>
+                            <td style="color: var(--accent-primary); font-weight: 600;">Scholarships</td>
+                            <td>August 15 - August 17</td>
+                            <td><a href="#" class="btn btn-secondary" style="padding: 0.5rem 1rem;"
+                                    data-open-modal="register-tournament-modal">Register</a></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-col">Queen's Gambit Rapid Arena</td>
+                            <td>9-Round Swiss (15+10)</td>
+                            <td><i class="fas fa-times"></i> No</td>
+                            <td style="color: var(--accent-primary); font-weight: 600;">$1,500</td>
+                            <td>August 29</td>
+                            <td><a href="#" class="btn btn-secondary" style="padding: 0.5rem 1rem;"
+                                    data-open-modal="register-tournament-modal">Register</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beginner & Junior Development Programs -->
+    <section id="educational-programs" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Academy</span>
+                <h2 class="section-title">Coaching Programs</h2>
+                <p class="section-subtitle">Structured pathways focusing on tactical patterns and cognitive growth.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <span class="tournament-badge"
+                        style="background: var(--accent-third); color: #FFF;">BEGINNERS</span>
+                    <h3 class="card-title" style="margin-top: 1rem;">Foundation Pathways</h3>
+                    <p class="card-desc">Designed for novices or casual hobbyists looking to structure their game.
+                        Covers opening systems (King's Pawn, Queen's Gambit setups), middle-game tactics (skewers,
+                        forks, pins), and mating nets.</p>
+                    <ul class="pricing-features" style="margin-bottom: 2rem;">
+                        <li><i class="fas fa-check-circle" style="color: var(--accent-third);"></i> Weekly 90-minute
+                            lectures</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--accent-third);"></i> Interactive tactical
+                            homework sheets</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--accent-third);"></i> Training tournaments
+                            on Saturday</li>
+                    </ul>
+                    <a href="coaching.html" class="btn btn-secondary">Learn More</a>
+                </div>
+
+                <div class="card">
+                    <span class="tournament-badge">JUNIOR DEVELOPMENT</span>
+                    <h3 class="card-title" style="margin-top: 1rem;">Junior Chess Academy</h3>
+                    <p class="card-desc">For players under 18 years seeking school championship laurels and early FIDE
+                        ratings. Focused on calculating lines, planning middle game operations, and building a
+                        disciplined mindset.</p>
+                    <ul class="pricing-features" style="margin-bottom: 2rem;">
+                        <li><i class="fas fa-check-circle"></i> Small-group interactive lessons</li>
+                        <li><i class="fas fa-check-circle"></i> Opening preparation & database guidance</li>
+                        <li><i class="fas fa-check-circle"></i> FIDE rated tournament access</li>
+                    </ul>
+                    <a href="coaching.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Champions -->
+    <section id="featured-champions">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Hall of Fame</span>
+                <h2 class="section-title">Club Champions</h2>
+                <p class="section-subtitle">Celebrate the outstanding achievements of our resident chess masters.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card" style="text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80"
+                        alt="GM Nicholas Vance"
+                        style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent-primary); margin-bottom: 1.5rem;">
+                    <h3 class="card-title">GM Nicholas Vance</h3>
+                    <p class="card-desc"
+                        style="color: var(--accent-primary); font-family: var(--font-accent); font-size: 0.9rem; letter-spacing: 1px;">
+                        FIDE RATING 2580</p>
+                    <p>Resident head coach and 3-time national classical champion. Specializes in structural endgames.
+                    </p>
+                </div>
+
+                <div class="card" style="text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80"
+                        alt="WIM Elena Rostova"
+                        style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent-primary); margin-bottom: 1.5rem;">
+                    <h3 class="card-title">WIM Elena Rostova</h3>
+                    <p class="card-desc"
+                        style="color: var(--accent-primary); font-family: var(--font-accent); font-size: 0.9rem; letter-spacing: 1px;">
+                        FIDE RATING 2290</p>
+                    <p>Junior Academy coordinator and active international competitor. Opening theory specialist.</p>
+                </div>
+
+                <div class="card" style="text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=300&q=80"
+                        alt="FM Aaron Patel"
+                        style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent-primary); margin-bottom: 1.5rem;">
+                    <h3 class="card-title">FM Aaron Patel</h3>
+                    <p class="card-desc"
+                        style="color: var(--accent-primary); font-family: var(--font-accent); font-size: 0.9rem; letter-spacing: 1px;">
+                        FIDE RATING 2340</p>
+                    <p>Blitz Club champion and active streamer. Master of sharp tactical sacrifices and complications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Club Milestones (Timeline) -->
+    <section id="milestones" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">History</span>
+                <h2 class="section-title">Club Milestones</h2>
+                <p class="section-subtitle">A chronological look at our progress over the decades.</p>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem;">
+                <div class="card" style="padding: 2rem;">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h3 class="card-title" style="margin-bottom: 0;">Club Founded</h3>
+                        <span
+                            style="font-family: var(--font-accent); color: var(--accent-primary); font-size: 1.25rem;">1998</span>
+                    </div>
+                    <p>The club was founded by a coalition of international arbiters to build chess culture in London.
+                    </p>
+                </div>
+                <div class="card" style="padding: 2rem;">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h3 class="card-title" style="margin-bottom: 0;">First Grandmaster Produced</h3>
+                        <span
+                            style="font-family: var(--font-accent); color: var(--accent-primary); font-size: 1.25rem;">2006</span>
+                    </div>
+                    <p>Student Mark Davies achieved his final GM norm at the London Chess Invitational hosted in our
+                        halls.</p>
+                </div>
+                <div class="card" style="padding: 2rem;">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h3 class="card-title" style="margin-bottom: 0;">FIDE Affiliation Granted</h3>
+                        <span
+                            style="font-family: var(--font-accent); color: var(--accent-primary); font-size: 1.25rem;">2012</span>
+                    </div>
+                    <p>Formally recognized by the International Chess Federation to submit tourney results directly for
+                        rating updates.</p>
+                </div>
+                <div class="card" style="padding: 2rem;">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h3 class="card-title" style="margin-bottom: 0;">Interactive Clubhouse Opened</h3>
+                        <span
+                            style="font-family: var(--font-accent); color: var(--accent-primary); font-size: 1.25rem;">2021</span>
+                    </div>
+                    <p>Established the modern luxury clubrooms featuring digital screens, interactive tables, and
+                        streaming rooms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tournaments Section -->
+    <section id="featured-tournaments-home" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Upcoming Events</span>
+                <h2 class="section-title">Featured Tournaments This Season</h2>
+                <p class="section-subtitle">Join competitive events and challenge players from around the world.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card tournament-card">
+                    <span class="tournament-badge">FIDE RATED</span>
+                    <h3 class="card-title" style="margin-top: 1rem;">Summer Classical Open</h3>
+                    <p class="card-desc">Standard FIDE ratings calculations. 90 mins + 30 sec increments. Strict
+                        notation required.</p>
+                    <div class="tournament-meta">
+                        <div class="meta-item"><i class="far fa-calendar-alt"></i> July 15 - July 18</div>
+                        <div class="meta-item"><i class="fas fa-trophy"></i> Prize Pool: $5,000</div>
+                        <div class="meta-item"><i class="fas fa-chess-board"></i> 90+30</div>
+                    </div>
+                    <a href="tournaments.html" class="btn btn-secondary" style="margin-top: 1.5rem;">Learn More</a>
+                </div>
+
+                <div class="card tournament-card">
+                    <span class="tournament-badge" style="background: var(--accent-third); color: #FFF;">RAPID</span>
+                    <h3 class="card-title" style="margin-top: 1rem;">Midsummer Rapid Cup</h3>
+                    <p class="card-desc">Rapid time control (15 mins + 10 sec). 7 Swiss rounds. Great for tactical
+                        players.</p>
+                    <div class="tournament-meta">
+                        <div class="meta-item"><i class="far fa-calendar-alt"></i> July 29</div>
+                        <div class="meta-item"><i class="fas fa-trophy"></i> Prize Pool: $1,500</div>
+                        <div class="meta-item"><i class="fas fa-chess-board"></i> 15+10</div>
+                    </div>
+                    <a href="tournaments.html" class="btn btn-secondary" style="margin-top: 1.5rem;">Learn More</a>
+                </div>
+
+                <div class="card tournament-card">
+                    <span class="tournament-badge">BLITZ</span>
+                    <h3 class="card-title" style="margin-top: 1rem;">Grandmaster Blitz Arena</h3>
+                    <p class="card-desc">Lightning fast 3+2 blitz. Swiss format, 11 rounds. Expect extreme time
+                        scrambles.</p>
+                    <div class="tournament-meta">
+                        <div class="meta-item"><i class="far fa-calendar-alt"></i> August 02</div>
+                        <div class="meta-item"><i class="fas fa-trophy"></i> Prize Pool: $2,500</div>
+                        <div class="meta-item"><i class="fas fa-chess-board"></i> 3+2</div>
+                    </div>
+                    <a href="tournaments.html" class="btn btn-secondary" style="margin-top: 1.5rem;">Learn More</a>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="tournaments.html" class="btn btn-primary">View All Tournaments</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Academy Section -->
+    <section id="training-academy-home">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Development</span>
+                <h2 class="section-title">Comprehensive Training Academy</h2>
+                <p class="section-subtitle">Structured pathways from beginner to grandmaster level with expert guidance.
+                </p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card" style="padding: 2rem;">
+                    <h3 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                        <span
+                            style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: var(--bg-secondary); border-radius: 50%; color: var(--accent-primary); font-size: 1.5rem;">
+                            <i class="fas fa-book"></i>
+                        </span>
+                        Beginner Program
+                    </h3>
+                    <p style="margin-bottom: 1.5rem;">Start your chess journey with fundamental rules, basic tactics,
+                        and piece movements. Perfect for all ages.</p>
+                    <ul class="pricing-features" style="margin-bottom: 1.5rem;">
+                        <li><i class="fas fa-check-circle"></i> Rules & Board Basics</li>
+                        <li><i class="fas fa-check-circle"></i> Tactical Motives</li>
+                        <li><i class="fas fa-check-circle"></i> Simple Checkmates</li>
+                    </ul>
+                    <a href="coaching.html" class="btn btn-secondary" style="width: 100%;">Enroll Now</a>
+                </div>
+
+                <div class="card" style="padding: 2rem;">
+                    <h3 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                        <span
+                            style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: var(--bg-secondary); border-radius: 50%; color: var(--accent-primary); font-size: 1.5rem;">
+                            <i class="fas fa-chess-knight"></i>
+                        </span>
+                        Intermediate Program
+                    </h3>
+                    <p style="margin-bottom: 1.5rem;">Develop strategic thinking and opening knowledge. Build a solid
+                        foundation for competitive play.</p>
+                    <ul class="pricing-features" style="margin-bottom: 1.5rem;">
+                        <li><i class="fas fa-check-circle"></i> Opening Repertoire</li>
+                        <li><i class="fas fa-check-circle"></i> Positional Strategy</li>
+                        <li><i class="fas fa-check-circle"></i> Endgame Fundamentals</li>
+                    </ul>
+                    <a href="coaching.html" class="btn btn-secondary" style="width: 100%;">Enroll Now</a>
+                </div>
+
+                <div class="card" style="padding: 2rem;">
+                    <h3 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                        <span
+                            style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: var(--bg-secondary); border-radius: 50%; color: var(--accent-primary); font-size: 1.5rem;">
+                            <i class="fas fa-trophy"></i>
+                        </span>
+                        Advanced Program
+                    </h3>
+                    <p style="margin-bottom: 1.5rem;">Master complex positions and compete at high levels. Prepare for
+                        FIDE norms and titles.</p>
+                    <ul class="pricing-features" style="margin-bottom: 1.5rem;">
+                        <li><i class="fas fa-check-circle"></i> Deep Calculation</li>
+                        <li><i class="fas fa-check-circle"></i> Psychological Preparation</li>
+                        <li><i class="fas fa-check-circle"></i> Neural Engine Training</li>
+                    </ul>
+                    <a href="coaching.html" class="btn btn-primary" style="width: 100%;">Apply for Elite</a>
+                </div>
+
+                <div class="card" style="padding: 2rem;">
+                    <h3 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                        <span
+                            style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: var(--bg-secondary); border-radius: 50%; color: var(--accent-primary); font-size: 1.5rem;">
+                            <i class="fas fa-graduation-cap"></i>
+                        </span>
+                        Youth Academy
+                    </h3>
+                    <p style="margin-bottom: 1.5rem;">Specially designed for players under 18. Build cognitive skills
+                        while having fun competing.</p>
+                    <ul class="pricing-features" style="margin-bottom: 1.5rem;">
+                        <li><i class="fas fa-check-circle"></i> Age-Appropriate Content</li>
+                        <li><i class="fas fa-check-circle"></i> School Tournament Prep</li>
+                        <li><i class="fas fa-check-circle"></i> Fun Learning Activities</li>
+                    </ul>
+                    <a href="coaching.html" class="btn btn-secondary" style="width: 100%;">Enroll Child</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50,15 L53,23 L61,23 L55,28 L57,36 L50,31 L43,36 L45,28 L39,23 L47,23 Z" />
+                        <path d="M35,40 L65,40 L62,48 L38,48 Z" />
+                        <rect x="42" y="48" width="16" height="24" rx="2" />
+                        <path d="M30,76 L70,76 L66,84 L34,84 Z" />
+                        <rect x="25" y="84" width="50" height="4" />
+                    </svg>
+                    <div class="logo-text" style="font-size: 1.25rem;">CHESS<span class="logo-accent"
+                            style="font-size: 1.25rem;">MASTERS</span></div>
+                </a>
+                <p class="footer-desc">A prestigious international club fostering competition, strategy, and
+                    intellectual excellence since 1998.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Explore</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Club</a></li>
+                    <li><a href="tournaments.html">Tournaments</a></li>
+                    <li><a href="coaching.html">Coaching Pathways</a></li>
+                    <li><a href="membership.html">Membership Plans</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog & Strategy</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="coming-soon.html">FIDE Rules</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Grandmaster HQ</h4>
+                <div class="footer-contact">
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>12 Royal Chess St, Grandmaster District, London, UK</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+44 (20) 7946 0958</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>office@chessmasters.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Chess Masters Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="join-club-modal">
+        <div class="modal-content">
+            <span class="modal-close"><i class="fas fa-times"></i></span>
+            <h3 class="modal-title">Join Chess Masters</h3>
+            <p class="modal-subtitle">Enroll as a player in our community to unlock complete member privileges.</p>
+            <form>
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Select Membership Plan</label>
+                    <select class="form-control">
+                        <option>Aspirant Plan ($29/mo)</option>
+                        <option>Contender Plan ($59/mo)</option>
+                        <option>Championship Plan ($99/mo)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Enrollment</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="register-tournament-modal">
+        <div class="modal-content">
+            <span class="modal-close"><i class="fas fa-times"></i></span>
+            <h3 class="modal-title">Tournament Registration</h3>
+            <p class="modal-subtitle">Reserve your seat. Matches require official check-in 30 mins before pairing.</p>
+            <form>
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">FIDE ID (Optional)</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Select Tournament</label>
+                    <select class="form-control">
+                        <option>Summer Classical Open (July 15)</option>
+                        <option>Grandmaster Blitz Arena (August 02)</option>
+                        <option>Under-16 Masters Challenge (August 12)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-premium" style="width: 100%;">Register & Check-In</button>
+            </form>
+        </div>
+    </div>
+
+    <button id="scroll-to-top-btn" class="scroll-top-btn" title="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

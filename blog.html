@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Strategy - Chess Masters</title>
+    <meta name="description"
+        content="Read theoretical analyses of chess openings, middlegame tactics, endgame calculations, and community news at Chess Masters.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    <!-- Open Graph / SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chessmasters.com/">
+    <meta property="og:image" content="assets/images/hero-1.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Site Header -->
+    <header id="main-header">
+        <div class="header-container container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50,15 L53,23 L61,23 L55,28 L57,36 L50,31 L43,36 L45,28 L39,23 L47,23 Z" />
+                    <path d="M35,40 L65,40 L62,48 L38,48 Z" />
+                    <rect x="42" y="48" width="16" height="24" rx="2" />
+                    <path d="M30,76 L70,76 L66,84 L34,84 Z" />
+                    <rect x="25" y="84" width="50" height="4" />
+                </svg>
+                <div class="logo-text">CHESS<span class="logo-accent">MASTERS</span></div>
+            </a>
+
+            <nav class="nav-menu" id="primary-navigation">
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle">
+                        Home <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="index.html" class="nav-dropdown-item">Masters Of Strategy</a>
+                        <a href="home-2.html" class="nav-dropdown-item">Championship Mindset</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="tournaments.html" class="nav-link">Tournaments</a>
+                <a href="coaching.html" class="nav-link">Coaching</a>
+                <a href="membership.html" class="nav-link">Membership</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="blog.html" class="nav-link active">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <!-- Mobile Theme & RTL Toggles (only visible in mobile menu) -->
+                <div class="nav-menu-controls">
+                    <button class="control-btn theme-toggle-btn" title="Toggle Theme"><i class="fas fa-sun"></i></button>
+                    <button class="control-btn rtl-toggle-btn" title="Toggle RTL"><i class="fas fa-right-left"></i></button>
+                </div>
+                <!-- Mobile Join Club (last in menu) -->
+                <div class="nav-menu-join-btn" style="display:none;">
+                    <a href="signup.html" class="btn btn-primary" style="width:100%; text-align:center;">Join Club</a>
+                </div>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="control-btn theme-toggle-btn" title="Toggle Theme"><i class="fas fa-sun"></i></button>
+                <button class="control-btn rtl-toggle-btn" title="Toggle RTL"><i class="fas fa-right-left"></i></button>
+                <a href="signup.html" class="btn btn-primary">Join Club</a>
+                <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Subpage Hero -->
+    <section class="hero"
+        style="min-height: auto; padding: 160px 0 80px 0; text-align: center; background-color: var(--bg-secondary);">
+        <div class="container">
+            <span class="hero-tag">Strategy Articles</span>
+            <h1 style="margin-bottom: 1rem;">Chess Strategy & News</h1>
+            <p style="margin: 0 auto; max-width: 600px;">Improve your positional vision with opening files, middle game
+                plans, endgame calculations, and club updates.</p>
+        </div>
+    </section>
+
+    <!-- Blog Grid Section -->
+    <section id="blog-articles">
+        <div class="container tab-container">
+            <!-- Blog Tabs Navigation -->
+            <div class="tab-nav" style="margin-bottom: 3rem; justify-content: center;">
+                <button class="tab-btn active" data-target="all-articles">All Articles</button>
+                <button class="tab-btn" data-target="opening-theory">Opening Theory</button>
+                <button class="tab-btn" data-target="tactics-endgames">Tactics & Endgames</button>
+            </div>
+
+            <!-- All Articles Tab -->
+            <div class="tab-content active" id="all-articles">
+                <div class="blog-grid">
+                    <!-- Article 1 -->
+                    <article class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/images/blog1.jpg" alt="Chess setup representing tactical checkmating lines"
+                                class="blog-img">
+                            <span class="blog-tag">OPENING THEORY</span>
+                        </div>
+                        <div class="blog-body">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> June 20, 2026</span>
+                                <span><i class="far fa-user"></i> GM Nicholas Vance</span>
+                            </div>
+                            <h3 class="blog-title"><a href="#">Demy the Queen's Gambit Declined</a></h3>
+                            <p class="blog-text">Deep-dive into structural pawn chains, Carlsbad configurations, and
+                                common
+                                positional blunders in standard classical lines.</p>
+                            <a href="#" style="font-weight: 600;">Read Repertoire <i class="fas fa-arrow-right"
+                                    style="font-size: 0.75rem;"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/images/blog2.jpg" alt="Hands holding chess pieces" class="blog-img">
+                            <span class="blog-tag">MID-GAME TACTICS</span>
+                        </div>
+                        <div class="blog-body">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> June 15, 2026</span>
+                                <span><i class="far fa-user"></i> WIM Elena Rostova</span>
+                            </div>
+                            <h3 class="blog-title"><a href="#">Mastering Greek Gift Bishop Sacrifices</a></h3>
+                            <p class="blog-text">How to calculate standard Bxh7+ bishop sacrifices safely. Identify
+                                defender
+                                patterns and escape routes before pulling the trigger.</p>
+                            <a href="#" style="font-weight: 600;">Read Repertoire <i class="fas fa-arrow-right"
+                                    style="font-size: 0.75rem;"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/images/blog3.jpg" alt="Quiet classical chess environment" class="blog-img">
+                            <span class="blog-tag">ENDGAME TECHNIQUE</span>
+                        </div>
+                        <div class="blog-body">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> June 08, 2026</span>
+                                <span><i class="far fa-user"></i> FM Aaron Patel</span>
+                            </div>
+                            <h3 class="blog-title"><a href="#">Essential Rook + Pawn vs Rook Draws</a></h3>
+                            <p class="blog-text">A study of Philidor's defense and Lucena's bridge calculations. Crucial
+                                theoretical benchmarks every candidate master must memorize.</p>
+                            <a href="#" style="font-weight: 600;">Read Repertoire <i class="fas fa-arrow-right"
+                                    style="font-size: 0.75rem;"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 - NEW -->
+                    <article class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/images/blog4.jpg" alt="Chess analysis board with pieces" class="blog-img">
+                            <span class="blog-tag">OPENING THEORY</span>
+                        </div>
+                        <div class="blog-body">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> June 05, 2026</span>
+                                <span><i class="far fa-user"></i> IM David Chen</span>
+                            </div>
+                            <h3 class="blog-title"><a href="#">Ruy Lopez Exchange Variation Secrets</a></h3>
+                            <p class="blog-text">Master the subtle nuances of one of chess's most respected openings.
+                                Learn how top grandmasters navigate complex middlegame transitions.</p>
+                            <a href="#" style="font-weight: 600;">Read Repertoire <i class="fas fa-arrow-right"
+                                    style="font-size: 0.75rem;"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 - NEW -->
+                    <article class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/images/blog5.jpg" alt="Chess tournament in progress" class="blog-img">
+                            <span class="blog-tag">MID-GAME TACTICS</span>
+                        </div>
+                        <div class="blog-body">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> May 28, 2026</span>
+                                <span><i class="far fa-user"></i> FM Sarah Mitchell</span>
+                            </div>
+                            <h3 class="blog-title"><a href="#">Brilliant Back Rank Tactics & Combinations</a></h3>
+                            <p class="blog-text">Discover devastating back rank mating patterns. Learn how to set traps
+                                and convert tactical advantages into decisive wins.</p>
+                            <a href="#" style="font-weight: 600;">Read Repertoire <i class="fas fa-arrow-right"
+                                    style="font-size: 0.75rem;"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Article 6 - NEW -->
+                    <article class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/images/blog6.jpg" alt="Chess championship match" class="blog-img">
+                            <span class="blog-tag">ENDGAME TECHNIQUE</span>
+                        </div>
+                        <div class="blog-body">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> May 20, 2026</span>
+                                <span><i class="far fa-user"></i> GM Robert Sterling</span>
+                            </div>
+                            <h3 class="blog-title"><a href="#">King and Pawn Endgames Mastery</a></h3>
+                            <p class="blog-text">The foundation of all endgame theory. Master opposition, zugzwang, and
+                                key square concepts essential for endgame excellence.</p>
+                            <a href="#" style="font-weight: 600;">Read Repertoire <i class="fas fa-arrow-right"
+                                    style="font-size: 0.75rem;"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Opening Theory Tab -->
+            <div class="tab-content" id="opening-theory">
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/images/hero-2.png"
+                                alt="Chess setup representing tactical checkmating lines" class="blog-img">
+                            <span class="blog-tag">OPENING THEORY</span>
+                        </div>
+                        <div class="blog-body">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> June 20, 2026</span>
+                                <span><i class="far fa-user"></i> GM Nicholas Vance</span>
+                            </div>
+                            <h3 class="blog-title"><a href="#">Demy the Queen's Gambit Declined</a></h3>
+                            <p class="blog-text">Deep-dive into structural pawn chains, Carlsbad configurations, and
+                                common positional blunders.</p>
+                            <a href="#" style="font-weight: 600;">Read Repertoire <i class="fas fa-arrow-right"
+                                    style="font-size: 0.75rem;"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80"
+                                alt="Chess analysis" class="blog-img">
+                            <span class="blog-tag">OPENING THEORY</span>
+                        </div>
+                        <div class="blog-body">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> June 05, 2026</span>
+                                <span><i class="far fa-user"></i> IM David Chen</span>
+                            </div>
+                            <h3 class="blog-title"><a href="#">Ruy Lopez Exchange Variation Secrets</a></h3>
+                            <p class="blog-text">Master the subtle nuances of one of chess's most respected openings.
+                            </p>
+                            <a href="#" style="font-weight: 600;">Read Repertoire <i class="fas fa-arrow-right"
+                                    style="font-size: 0.75rem;"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Tactics & Endgames Tab -->
+            <div class="tab-content" id="tactics-endgames">
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=600&q=80"
+                                alt="Chess pieces" class="blog-img">
+                            <span class="blog-tag">MID-GAME TACTICS</span>
+                        </div>
+                        <div class="blog-body">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> June 15, 2026</span>
+                                <span><i class="far fa-user"></i> WIM Elena Rostova</span>
+                            </div>
+                            <h3 class="blog-title"><a href="#">Mastering Greek Gift Bishop Sacrifices</a></h3>
+                            <p class="blog-text">How to calculate standard Bxh7+ bishop sacrifices safely.</p>
+                            <a href="#" style="font-weight: 600;">Read Repertoire <i class="fas fa-arrow-right"
+                                    style="font-size: 0.75rem;"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/images/hero-1.png" alt="Chess endgame" class="blog-img">
+                            <span class="blog-tag">ENDGAME TECHNIQUE</span>
+                        </div>
+                        <div class="blog-body">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> June 08, 2026</span>
+                                <span><i class="far fa-user"></i> FM Aaron Patel</span>
+                            </div>
+                            <h3 class="blog-title"><a href="#">Essential Rook + Pawn vs Rook Draws</a></h3>
+                            <p class="blog-text">Crucial theoretical benchmarks every candidate master must memorize.
+                            </p>
+                            <a href="#" style="font-weight: 600;">Read Repertoire <i class="fas fa-arrow-right"
+                                    style="font-size: 0.75rem;"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80"
+                                alt="Chess match" class="blog-img">
+                            <span class="blog-tag">ENDGAME TECHNIQUE</span>
+                        </div>
+                        <div class="blog-body">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> May 20, 2026</span>
+                                <span><i class="far fa-user"></i> GM Robert Sterling</span>
+                            </div>
+                            <h3 class="blog-title"><a href="#">King and Pawn Endgames Mastery</a></h3>
+                            <p class="blog-text">Master opposition, zugzwang, and key square concepts.</p>
+                            <a href="#" style="font-weight: 600;">Read Repertoire <i class="fas fa-arrow-right"
+                                    style="font-size: 0.75rem;"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50,15 L53,23 L61,23 L55,28 L57,36 L50,31 L43,36 L45,28 L39,23 L47,23 Z" />
+                        <path d="M35,40 L65,40 L62,48 L38,48 Z" />
+                        <rect x="42" y="48" width="16" height="24" rx="2" />
+                        <path d="M30,76 L70,76 L66,84 L34,84 Z" />
+                        <rect x="25" y="84" width="50" height="4" />
+                    </svg>
+                    <div class="logo-text" style="font-size: 1.25rem;">CHESS<span class="logo-accent"
+                            style="font-size: 1.25rem;">MASTERS</span></div>
+                </a>
+                <p class="footer-desc">A prestigious international club fostering competition, strategy, and
+                    intellectual excellence since 1998.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Explore</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Club</a></li>
+                    <li><a href="tournaments.html">Tournaments</a></li>
+                    <li><a href="coaching.html">Coaching Pathways</a></li>
+                    <li><a href="membership.html">Membership Plans</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog & Strategy</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="coming-soon.html">FIDE Rules</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Grandmaster HQ</h4>
+                <div class="footer-contact">
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>12 Royal Chess St, Grandmaster District, London, UK</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+44 (20) 7946 0958</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>office@chessmasters.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Chess Masters Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="join-club-modal">
+        <div class="modal-content">
+            <span class="modal-close"><i class="fas fa-times"></i></span>
+            <h3 class="modal-title">Join Chess Masters</h3>
+            <p class="modal-subtitle">Enroll as a player in our community to unlock complete member privileges.</p>
+            <form>
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Select Membership Plan</label>
+                    <select class="form-control">
+                        <option>Aspirant Plan ($29/mo)</option>
+                        <option>Contender Plan ($59/mo)</option>
+                        <option>Championship Plan ($99/mo)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Enrollment</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="register-tournament-modal">
+        <div class="modal-content">
+            <span class="modal-close"><i class="fas fa-times"></i></span>
+            <h3 class="modal-title">Tournament Registration</h3>
+            <p class="modal-subtitle">Reserve your seat. Matches require official check-in 30 mins before pairing.</p>
+            <form>
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">FIDE ID (Optional)</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Select Tournament</label>
+                    <select class="form-control">
+                        <option>Summer Classical Open (July 15)</option>
+                        <option>Grandmaster Blitz Arena (August 02)</option>
+                        <option>Under-16 Masters Challenge (August 12)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-premium" style="width: 100%;">Register & Check-In</button>
+            </form>
+        </div>
+    </div>
+
+    <button id="scroll-to-top-btn" class="scroll-top-btn" title="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

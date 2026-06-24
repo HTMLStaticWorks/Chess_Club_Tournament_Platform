@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Chess Masters</title>
+    <meta name="description"
+        content="Explore pictures of tournaments, training workshops, junior matches, and award ceremonies at Chess Masters Club.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    <!-- Open Graph / SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chessmasters.com/">
+    <meta property="og:image" content="assets/images/hero-1.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Site Header -->
+    <header id="main-header">
+        <div class="header-container container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50,15 L53,23 L61,23 L55,28 L57,36 L50,31 L43,36 L45,28 L39,23 L47,23 Z" />
+                    <path d="M35,40 L65,40 L62,48 L38,48 Z" />
+                    <rect x="42" y="48" width="16" height="24" rx="2" />
+                    <path d="M30,76 L70,76 L66,84 L34,84 Z" />
+                    <rect x="25" y="84" width="50" height="4" />
+                </svg>
+                <div class="logo-text">CHESS<span class="logo-accent">MASTERS</span></div>
+            </a>
+
+            <nav class="nav-menu" id="primary-navigation">
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle">
+                        Home <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="index.html" class="nav-dropdown-item">Masters Of Strategy</a>
+                        <a href="home-2.html" class="nav-dropdown-item">Championship Mindset</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="tournaments.html" class="nav-link">Tournaments</a>
+                <a href="coaching.html" class="nav-link">Coaching</a>
+                <a href="membership.html" class="nav-link">Membership</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <!-- Mobile Theme & RTL Toggles (only visible in mobile menu) -->
+                <div class="nav-menu-controls">
+                    <button class="control-btn theme-toggle-btn" title="Toggle Theme"><i class="fas fa-sun"></i></button>
+                    <button class="control-btn rtl-toggle-btn" title="Toggle RTL"><i class="fas fa-right-left"></i></button>
+                </div>
+                <!-- Mobile Join Club (last in menu) -->
+                <div class="nav-menu-join-btn" style="display:none;">
+                    <a href="signup.html" class="btn btn-primary" style="width:100%; text-align:center;">Join Club</a>
+                </div>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="control-btn theme-toggle-btn" title="Toggle Theme"><i class="fas fa-sun"></i></button>
+                <button class="control-btn rtl-toggle-btn" title="Toggle RTL"><i class="fas fa-right-left"></i></button>
+                <a href="signup.html" class="btn btn-primary">Join Club</a>
+                <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Subpage Hero -->
+    <section class="hero"
+        style="min-height: auto; padding: 160px 0 80px 0; text-align: center; background-color: var(--bg-secondary);">
+        <div class="container">
+            <span class="hero-tag">Visual History</span>
+            <h1 style="margin-bottom: 1rem;">Club Photo Gallery</h1>
+            <p style="margin: 0 auto; max-width: 600px;">Peek inside our luxurious clubhouse, FIDE-rated tournament
+                halls, intense analysis circles, and junior championships.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Masonry Section -->
+    <section id="club-gallery">
+        <div class="container tab-container">
+            <!-- Tabs Navigation -->
+            <div class="tab-nav">
+                <button class="tab-btn active" data-target="all-images">All Moments</button>
+                <button class="tab-btn" data-target="tourney-images">Tournaments</button>
+                <button class="tab-btn" data-target="training-images">Coaching & Junior</button>
+            </div>
+
+            <!-- Tab Content: All Images -->
+            <div class="tab-content active" id="all-images">
+                <div class="gallery-grid">
+                    <!-- Item 1 -->
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery1.jpg" alt="Grandmaster Championship Tournament Hall">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Classical Open Championship</h3>
+                            <span class="gallery-item-tag">TOURNAMENTS</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery2.jpg" alt="Luxury Hand-carved Chess King Piece Detail">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Elegance of Strategy</h3>
+                            <span class="gallery-item-tag">CLUB AMBIANCE</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery3.jpg" alt="Intense calculation focus close-up">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Positional Calculation</h3>
+                            <span class="gallery-item-tag">TOURNAMENTS</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery4.jpg" alt="Head coach reviewing student game records">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Grandmaster Review</h3>
+                            <span class="gallery-item-tag">COACHING</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery5.jpg" alt="Club night blitz chess matches in progress">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Blitz Club Social Night</h3>
+                            <span class="gallery-item-tag">CLUB ACTIVITIES</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery6.jpg" alt="Junior league trophy collection and awards">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Under-16 Honors Podium</h3>
+                            <span class="gallery-item-tag">AWARDS</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 7 - NEW -->
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery7.jpg" alt="Grandmaster simultaneous exhibition event">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Grandmaster Simultaneous Exhibition</h3>
+                            <span class="gallery-item-tag">TOURNAMENTS</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 8 - NEW -->
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery8.jpg" alt="Interactive chess analysis workshop">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Interactive Analysis Workshop</h3>
+                            <span class="gallery-item-tag">COACHING</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 9 - NEW -->
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery9.jpg" alt="Club dining and social events">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Club Dining & Networking</h3>
+                            <span class="gallery-item-tag">CLUB ACTIVITIES</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Gallery Sections -->
+            <!-- Section 2: Member Highlights -->
+            <div style="margin-top: 4rem; padding: 3rem 0; border-top: 1px solid var(--bg-card);">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Tournament Victories & Celebrations</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/images/victory1.jpg" alt="Championship trophy presentation">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Victory Celebration</h3>
+                            <span class="gallery-item-tag">TOURNAMENTS</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/images/victory2.jpg" alt="Team building activities">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Team Building Events</h3>
+                            <span class="gallery-item-tag">CLUB ACTIVITIES</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/images/victory3.jpg" alt="Friendly matches and challenges">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Friendly Matches</h3>
+                            <span class="gallery-item-tag">CLUB ACTIVITIES</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/images/victory4.jpg" alt="International grandmaster visit">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">International GM Visit</h3>
+                            <span class="gallery-item-tag">TOURNAMENTS</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/images/victory5.jpg" alt="Youth academy graduation">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Youth Academy Graduation</h3>
+                            <span class="gallery-item-tag">AWARDS</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/images/victory6.jpg" alt="Media coverage and interviews">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Media & Press Coverage</h3>
+                            <span class="gallery-item-tag">CLUB AMBIANCE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Behind the Scenes -->
+            <div style="margin-top: 4rem; padding: 3rem 0 6rem 0; border-top: 1px solid var(--bg-card);">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Behind the Scenes</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/images/bts1.jpg" alt="Clubroom preparation and setup">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Clubroom Preparation</h3>
+                            <span class="gallery-item-tag">CLUB AMBIANCE</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/images/bts2.jpg" alt="DGT board systems and technology">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Modern Chess Technology</h3>
+                            <span class="gallery-item-tag">TOURNAMENTS</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/images/bts3.jpg" alt="Coaching session details">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">One-on-One Coaching</h3>
+                            <span class="gallery-item-tag">COACHING</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/images/bts4.jpg" alt="Library and resource center">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Resource Library</h3>
+                            <span class="gallery-item-tag">CLUB AMBIANCE</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/images/bts5.jpg" alt="Tournament scheduling and logistics">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Tournament Operations</h3>
+                            <span class="gallery-item-tag">TOURNAMENTS</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/images/bts6.jpg" alt="Community building activities">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Community Spirit</h3>
+                            <span class="gallery-item-tag">CLUB ACTIVITIES</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Tournaments -->
+            <div class="tab-content" id="tourney-images">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/images/hero-1.png" alt="Grandmaster Championship Tournament Hall">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Classical Open Championship</h3>
+                            <span class="gallery-item-tag">TOURNAMENTS</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=600&q=80"
+                            alt="Intense calculation focus close-up">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Positional Calculation</h3>
+                            <span class="gallery-item-tag">TOURNAMENTS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Coaching & Junior -->
+            <div class="tab-content" id="training-images">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80"
+                            alt="Head coach reviewing student game records">
+                        <div class="gallery-item-overlay">
+                            <h3 class="gallery-item-title">Grandmaster Review</h3>
+                            <span class="gallery-item-tag">COACHING</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal Container -->
+    <div class="lightbox" id="lightbox-modal">
+        <span class="lightbox-close"><i class="fas fa-times"></i></span>
+        <img src="" alt="" class="lightbox-content">
+        <div class="lightbox-caption"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50,15 L53,23 L61,23 L55,28 L57,36 L50,31 L43,36 L45,28 L39,23 L47,23 Z" />
+                        <path d="M35,40 L65,40 L62,48 L38,48 Z" />
+                        <rect x="42" y="48" width="16" height="24" rx="2" />
+                        <path d="M30,76 L70,76 L66,84 L34,84 Z" />
+                        <rect x="25" y="84" width="50" height="4" />
+                    </svg>
+                    <div class="logo-text" style="font-size: 1.25rem;">CHESS<span class="logo-accent"
+                            style="font-size: 1.25rem;">MASTERS</span></div>
+                </a>
+                <p class="footer-desc">A prestigious international club fostering competition, strategy, and
+                    intellectual excellence since 1998.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Explore</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Club</a></li>
+                    <li><a href="tournaments.html">Tournaments</a></li>
+                    <li><a href="coaching.html">Coaching Pathways</a></li>
+                    <li><a href="membership.html">Membership Plans</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog & Strategy</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="coming-soon.html">FIDE Rules</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Grandmaster HQ</h4>
+                <div class="footer-contact">
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>12 Royal Chess St, Grandmaster District, London, UK</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+44 (20) 7946 0958</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>office@chessmasters.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Chess Masters Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="join-club-modal">
+        <div class="modal-content">
+            <span class="modal-close"><i class="fas fa-times"></i></span>
+            <h3 class="modal-title">Join Chess Masters</h3>
+            <p class="modal-subtitle">Enroll as a player in our community to unlock complete member privileges.</p>
+            <form>
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Select Membership Plan</label>
+                    <select class="form-control">
+                        <option>Aspirant Plan ($29/mo)</option>
+                        <option>Contender Plan ($59/mo)</option>
+                        <option>Championship Plan ($99/mo)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Enrollment</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="register-tournament-modal">
+        <div class="modal-content">
+            <span class="modal-close"><i class="fas fa-times"></i></span>
+            <h3 class="modal-title">Tournament Registration</h3>
+            <p class="modal-subtitle">Reserve your seat. Matches require official check-in 30 mins before pairing.</p>
+            <form>
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">FIDE ID (Optional)</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Select Tournament</label>
+                    <select class="form-control">
+                        <option>Summer Classical Open (July 15)</option>
+                        <option>Grandmaster Blitz Arena (August 02)</option>
+                        <option>Under-16 Masters Challenge (August 12)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-premium" style="width: 100%;">Register & Check-In</button>
+            </form>
+        </div>
+    </div>
+
+    <button id="scroll-to-top-btn" class="scroll-top-btn" title="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

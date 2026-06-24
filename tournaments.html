@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournaments - Chess Masters</title>
+    <meta name="description" content="Browse and register for FIDE-rated, Rapid, Blitz, and Junior tournaments at Chess Masters Club. Verify calendar schedules and prize structures.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    <!-- Open Graph / SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chessmasters.com/">
+    <meta property="og:image" content="assets/images/hero-1.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Site Header -->
+    <header id="main-header">
+        <div class="header-container container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50,15 L53,23 L61,23 L55,28 L57,36 L50,31 L43,36 L45,28 L39,23 L47,23 Z" />
+                    <path d="M35,40 L65,40 L62,48 L38,48 Z" />
+                    <rect x="42" y="48" width="16" height="24" rx="2" />
+                    <path d="M30,76 L70,76 L66,84 L34,84 Z" />
+                    <rect x="25" y="84" width="50" height="4" />
+                </svg>
+                <div class="logo-text">CHESS<span class="logo-accent">MASTERS</span></div>
+            </a>
+
+            <nav class="nav-menu" id="primary-navigation">
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle">
+                        Home <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="index.html" class="nav-dropdown-item">Masters Of Strategy</a>
+                        <a href="home-2.html" class="nav-dropdown-item">Championship Mindset</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="tournaments.html" class="nav-link active">Tournaments</a>
+                <a href="coaching.html" class="nav-link">Coaching</a>
+                <a href="membership.html" class="nav-link">Membership</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <!-- Mobile Theme & RTL Toggles (only visible in mobile menu) -->
+                <div class="nav-menu-controls">
+                    <button class="control-btn theme-toggle-btn" title="Toggle Theme"><i class="fas fa-sun"></i></button>
+                    <button class="control-btn rtl-toggle-btn" title="Toggle RTL"><i class="fas fa-right-left"></i></button>
+                </div>
+            <!-- Mobile Join Club (last in menu) -->
+            <div class="nav-menu-join-btn" style="display:none;">
+                <a href="signup.html" class="btn btn-primary" style="width:100%; text-align:center;">Join Club</a>
+            </div>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="control-btn theme-toggle-btn" title="Toggle Theme"><i class="fas fa-sun"></i></button>
+                <button class="control-btn rtl-toggle-btn" title="Toggle RTL"><i class="fas fa-right-left"></i></button>
+                <a href="signup.html" class="btn btn-primary">Join Club</a>
+                <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Subpage Hero -->
+    <section class="hero" style="min-height: auto; padding: 160px 0 80px 0; text-align: center; background-color: var(--bg-secondary);">
+        <div class="container">
+            <span class="hero-tag">Official Calendars</span>
+            <h1 style="margin-bottom: 1rem;">Chess Club Tournaments</h1>
+            <p style="margin: 0 auto; max-width: 600px;">Official FIDE-rated events, blitz formats, rapid games, and junior challenges. Register online to lock your pairing.</p>
+        </div>
+    </section>
+
+    <!-- Tournaments Filter Section -->
+    <section id="tournaments-filter">
+        <div class="container tab-container">
+            <!-- Tabs Menu -->
+            <div class="tab-nav">
+                <button class="tab-btn active" data-target="all-events">All Events</button>
+                <button class="tab-btn" data-target="fide-events">FIDE Rated</button>
+                <button class="tab-btn" data-target="blitz-events">Blitz & Rapid</button>
+                <button class="tab-btn" data-target="junior-events">Junior Leagues</button>
+            </div>
+
+            <!-- Tab Content: All Events -->
+            <div class="tab-content active" id="all-events">
+                <div class="grid-3">
+                    <div class="card tournament-card">
+                        <div class="tournament-img-wrapper" style="margin-bottom: 1.5rem; border-radius: 4px; overflow: hidden; aspect-ratio: 16/9;">
+                            <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=600&q=80" alt="Summer Classical Open" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <span class="tournament-badge">FIDE RATED</span>
+                        <h3 class="card-title" style="margin-top: 1rem;">Summer Classical Open</h3>
+                        <p class="card-desc">Standard FIDE ratings calculations. 90 mins + 30 sec increments. Strict notation required.</p>
+                        <div class="tournament-meta">
+                            <div class="meta-item"><i class="far fa-calendar-alt"></i> July 15 - July 18, 2026</div>
+                            <div class="meta-item"><i class="fas fa-trophy"></i> Prize Pool: $5,000</div>
+                            <div class="meta-item"><i class="fas fa-chess-board"></i> Time Control: 90+30</div>
+                        </div>
+                        <a href="tournament-details.html" class="btn btn-secondary" style="margin-top: 1.5rem;">View Details</a>
+                    </div>
+
+                    <div class="card tournament-card">
+                        <div class="tournament-img-wrapper" style="margin-bottom: 1.5rem; border-radius: 4px; overflow: hidden; aspect-ratio: 16/9;">
+                            <img src="https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=600&q=80" alt="Midsummer Rapid Cup" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <span class="tournament-badge" style="background: var(--accent-third); color: #FFF;">RAPID</span>
+                        <h3 class="card-title" style="margin-top: 1rem;">Midsummer Rapid Cup</h3>
+                        <p class="card-desc">Rapid time control (15 mins + 10 sec). 7 Swiss rounds. Great for tactical players.</p>
+                        <div class="tournament-meta">
+                            <div class="meta-item"><i class="far fa-calendar-alt"></i> July 29, 2026</div>
+                            <div class="meta-item"><i class="fas fa-trophy"></i> Prize Pool: $1,500</div>
+                            <div class="meta-item"><i class="fas fa-chess-board"></i> Time Control: 15+10</div>
+                        </div>
+                        <a href="tournament-details.html" class="btn btn-secondary" style="margin-top: 1.5rem;">View Details</a>
+                    </div>
+
+                    <div class="card tournament-card">
+                        <div class="tournament-img-wrapper" style="margin-bottom: 1.5rem; border-radius: 4px; overflow: hidden; aspect-ratio: 16/9;">
+                            <img src="https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?auto=format&fit=crop&w=600&q=80" alt="Grandmaster Blitz Arena" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <span class="tournament-badge">BLITZ</span>
+                        <h3 class="card-title" style="margin-top: 1rem;">Grandmaster Blitz Arena</h3>
+                        <p class="card-desc">Lightning fast 3+2 blitz. Swiss format, 11 rounds. Expect extreme time scrambles.</p>
+                        <div class="tournament-meta">
+                            <div class="meta-item"><i class="far fa-calendar-alt"></i> August 02, 2026</div>
+                            <div class="meta-item"><i class="fas fa-trophy"></i> Prize Pool: $2,500</div>
+                            <div class="meta-item"><i class="fas fa-chess-board"></i> Time Control: 3+2</div>
+                        </div>
+                        <a href="tournament-details.html" class="btn btn-secondary" style="margin-top: 1.5rem;">View Details</a>
+                    </div>
+
+                    <div class="card tournament-card">
+                        <div class="tournament-img-wrapper" style="margin-bottom: 1.5rem; border-radius: 4px; overflow: hidden; aspect-ratio: 16/9;">
+                            <img src="https://images.unsplash.com/photo-1580541832626-2a7131ee809f?auto=format&fit=crop&w=600&q=80" alt="Under-16 Masters Challenge" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <span class="tournament-badge">JUNIOR</span>
+                        <h3 class="card-title" style="margin-top: 1rem;">Under-16 Masters Challenge</h3>
+                        <p class="card-desc">School league champions championship. Focus on categories U12, U14 and U16.</p>
+                        <div class="tournament-meta">
+                            <div class="meta-item"><i class="far fa-calendar-alt"></i> August 12, 2026</div>
+                            <div class="meta-item"><i class="fas fa-trophy"></i> Scholarships & Medals</div>
+                            <div class="meta-item"><i class="fas fa-chess-board"></i> Time Control: 60+10</div>
+                        </div>
+                        <a href="tournament-details.html" class="btn btn-secondary" style="margin-top: 1.5rem;">View Details</a>
+                    </div>
+
+                    <div class="card tournament-card">
+                        <div class="tournament-img-wrapper" style="margin-bottom: 1.5rem; border-radius: 4px; overflow: hidden; aspect-ratio: 16/9;">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" alt="Resident Championship" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <span class="tournament-badge">CLUB EXCLUSIVE</span>
+                        <h3 class="card-title" style="margin-top: 1rem;">Resident Championship</h3>
+                        <p class="card-desc">Annual members-only competition. Determine the official Club Champion for 2026.</p>
+                        <div class="tournament-meta">
+                            <div class="meta-item"><i class="far fa-calendar-alt"></i> September 05 - September 07, 2026</div>
+                            <div class="meta-item"><i class="fas fa-trophy"></i> Gold Cup + Honor Board</div>
+                            <div class="meta-item"><i class="fas fa-chess-board"></i> Time Control: 90+30</div>
+                        </div>
+                        <a href="tournament-details.html" class="btn btn-secondary" style="margin-top: 1.5rem;">View Details</a>
+                    </div>
+
+                    <div class="card tournament-card">
+                        <div class="tournament-img-wrapper" style="margin-bottom: 1.5rem; border-radius: 4px; overflow: hidden; aspect-ratio: 16/9;">
+                            <img src="https://images.unsplash.com/photo-1553481187-be93c21490a9?auto=format&fit=crop&w=600&q=80" alt="October Speed Chess Festival" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <span class="tournament-badge" style="background: var(--accent-premium); color: #0F1117;">LIGHTNING</span>
+                        <h3 class="card-title" style="margin-top: 1rem;">October Speed Chess Festival</h3>
+                        <p class="card-desc">Three days of rapid and blitz tournaments. Win cash prizes and fame among speed chess enthusiasts.</p>
+                        <div class="tournament-meta">
+                            <div class="meta-item"><i class="far fa-calendar-alt"></i> October 10 - October 12, 2026</div>
+                            <div class="meta-item"><i class="fas fa-trophy"></i> Prize Pool: $3,500</div>
+                            <div class="meta-item"><i class="fas fa-chess-board"></i> Time Control: 5+3 & 10+5</div>
+                        </div>
+                        <a href="tournament-details.html" class="btn btn-secondary" style="margin-top: 1.5rem;">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: FIDE Rated -->
+            <div class="tab-content" id="fide-events">
+                <div class="grid-3">
+                    <div class="card tournament-card">
+                        <div class="tournament-img-wrapper" style="margin-bottom: 1.5rem; border-radius: 4px; overflow: hidden; aspect-ratio: 16/9;">
+                            <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=600&q=80" alt="Summer Classical Open" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <span class="tournament-badge">FIDE RATED</span>
+                        <h3 class="card-title" style="margin-top: 1rem;">Summer Classical Open</h3>
+                        <p class="card-desc">Standard FIDE ratings calculations. 90 mins + 30 sec increments. Strict notation required.</p>
+                        <div class="tournament-meta">
+                            <div class="meta-item"><i class="far fa-calendar-alt"></i> July 15 - July 18, 2026</div>
+                            <div class="meta-item"><i class="fas fa-trophy"></i> Prize Pool: $5,000</div>
+                            <div class="meta-item"><i class="fas fa-chess-board"></i> Time Control: 90+30</div>
+                        </div>
+                        <a href="tournament-details.html" class="btn btn-secondary" style="margin-top: 1.5rem;">View Details</a>
+                    </div>
+
+                    <div class="card tournament-card">
+                        <div class="tournament-img-wrapper" style="margin-bottom: 1.5rem; border-radius: 4px; overflow: hidden; aspect-ratio: 16/9;">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" alt="Resident Championship" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <span class="tournament-badge">CLUB EXCLUSIVE</span>
+                        <h3 class="card-title" style="margin-top: 1rem;">Resident Championship</h3>
+                        <p class="card-desc">Annual members-only competition. Determine the official Club Champion for 2026.</p>
+                        <div class="tournament-meta">
+                            <div class="meta-item"><i class="far fa-calendar-alt"></i> September 05 - September 07, 2026</div>
+                            <div class="meta-item"><i class="fas fa-trophy"></i> Gold Cup + Honor Board</div>
+                            <div class="meta-item"><i class="fas fa-chess-board"></i> Time Control: 90+30</div>
+                        </div>
+                        <a href="tournament-details.html" class="btn btn-secondary" style="margin-top: 1.5rem;">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Blitz & Rapid -->
+            <div class="tab-content" id="blitz-events">
+                <div class="grid-3">
+                    <div class="card tournament-card">
+                        <div class="tournament-img-wrapper" style="margin-bottom: 1.5rem; border-radius: 4px; overflow: hidden; aspect-ratio: 16/9;">
+                            <img src="https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=600&q=80" alt="Midsummer Rapid Cup" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <span class="tournament-badge" style="background: var(--accent-third); color: #FFF;">RAPID</span>
+                        <h3 class="card-title" style="margin-top: 1rem;">Midsummer Rapid Cup</h3>
+                        <p class="card-desc">Rapid time control (15 mins + 10 sec). 7 Swiss rounds. Great for tactical players.</p>
+                        <div class="tournament-meta">
+                            <div class="meta-item"><i class="far fa-calendar-alt"></i> July 29, 2026</div>
+                            <div class="meta-item"><i class="fas fa-trophy"></i> Prize Pool: $1,500</div>
+                            <div class="meta-item"><i class="fas fa-chess-board"></i> Time Control: 15+10</div>
+                        </div>
+                        <a href="tournament-details.html" class="btn btn-secondary" style="margin-top: 1.5rem;">View Details</a>
+                    </div>
+
+                    <div class="card tournament-card">
+                        <div class="tournament-img-wrapper" style="margin-bottom: 1.5rem; border-radius: 4px; overflow: hidden; aspect-ratio: 16/9;">
+                            <img src="https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?auto=format&fit=crop&w=600&q=80" alt="Grandmaster Blitz Arena" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <span class="tournament-badge">BLITZ</span>
+                        <h3 class="card-title" style="margin-top: 1rem;">Grandmaster Blitz Arena</h3>
+                        <p class="card-desc">Lightning fast 3+2 blitz. Swiss format, 11 rounds. Expect extreme time scrambles.</p>
+                        <div class="tournament-meta">
+                            <div class="meta-item"><i class="far fa-calendar-alt"></i> August 02, 2026</div>
+                            <div class="meta-item"><i class="fas fa-trophy"></i> Prize Pool: $2,500</div>
+                            <div class="meta-item"><i class="fas fa-chess-board"></i> Time Control: 3+2</div>
+                        </div>
+                        <a href="tournament-details.html" class="btn btn-secondary" style="margin-top: 1.5rem;">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Junior Events -->
+            <div class="tab-content" id="junior-events">
+                <div class="grid-3">
+                    <div class="card tournament-card">
+                        <div class="tournament-img-wrapper" style="margin-bottom: 1.5rem; border-radius: 4px; overflow: hidden; aspect-ratio: 16/9;">
+                            <img src="https://images.unsplash.com/photo-1580541832626-2a7131ee809f?auto=format&fit=crop&w=600&q=80" alt="Under-16 Masters Challenge" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <span class="tournament-badge">JUNIOR</span>
+                        <h3 class="card-title" style="margin-top: 1rem;">Under-16 Masters Challenge</h3>
+                        <p class="card-desc">School league champions championship. Focus on categories U12, U14 and U16.</p>
+                        <div class="tournament-meta">
+                            <div class="meta-item"><i class="far fa-calendar-alt"></i> August 12, 2026</div>
+                            <div class="meta-item"><i class="fas fa-trophy"></i> Scholarships & Medals</div>
+                            <div class="meta-item"><i class="fas fa-chess-board"></i> Time Control: 60+10</div>
+                        </div>
+                        <a href="tournament-details.html" class="btn btn-secondary" style="margin-top: 1.5rem;">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Banner -->
+    <section style="background-color: var(--bg-secondary);">
+        <div class="container grid-2">
+            <div>
+                <span class="section-tag">Arbitration</span>
+                <h2 class="section-title">Fair Play & Regulation</h2>
+                <p style="margin-bottom: 1.5rem;">All events follow official FIDE regulations strictly. Anti-cheating algorithms and metal detectors are used for high-tier rated sections.</p>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check-circle"></i> Zero-tolerance digital device policy in playing halls</li>
+                    <li><i class="fas fa-check-circle"></i> Complete notation sheets required for standard schedules</li>
+                    <li><i class="fas fa-check-circle"></i> Qualified National and International Arbiters present</li>
+                </ul>
+            </div>
+            <div class="card" style="padding: 3rem;">
+                <h3 style="margin-bottom: 1rem;">Need Help Pairing?</h3>
+                <p style="margin-bottom: 2rem;">If you are unsure which category suits your current skill levels, consult our arbiter board.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Arbiter Office</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournament Preparation Guide Section -->
+    <section id="tournament-prep" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Getting Ready</span>
+                <h2 class="section-title">Tournament Preparation Guide</h2>
+                <p class="section-subtitle">Everything you need to know before competing in a Chess Masters event.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card" style="padding: 2rem;">
+                    <h3 style="margin-bottom: 1rem;">
+                        <i class="fas fa-clipboard-list" style="color: var(--accent-primary); margin-right: 0.75rem;"></i>
+                        Pre-Tournament Checklist
+                    </h3>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> Register online at least 7 days before</li>
+                        <li><i class="fas fa-check-circle"></i> Bring valid ID and FIDE rating card (if applicable)</li>
+                        <li><i class="fas fa-check-circle"></i> Arrive 45 minutes before first round</li>
+                        <li><i class="fas fa-check-circle"></i> Bring notation sheet and approved pen</li>
+                        <li><i class="fas fa-check-circle"></i> No electronic devices in playing hall</li>
+                        <li><i class="fas fa-check-circle"></i> Review current FIDE rules (updated annually)</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="padding: 2rem;">
+                    <h3 style="margin-bottom: 1rem;">
+                        <i class="fas fa-brain" style="color: var(--accent-primary); margin-right: 0.75rem;"></i>
+                        Mental Preparation
+                    </h3>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> Get adequate sleep the night before</li>
+                        <li><i class="fas fa-check-circle"></i> Practice time management with clocks</li>
+                        <li><i class="fas fa-check-circle"></i> Review your opening repertoire</li>
+                        <li><i class="fas fa-check-circle"></i> Solve 10-15 tactical puzzles daily</li>
+                        <li><i class="fas fa-check-circle"></i> Stay calm and focused during play</li>
+                        <li><i class="fas fa-check-circle"></i> Analyze losses with a coach afterwards</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Champions & Records Section -->
+    <section id="champions-records">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Hall of Fame</span>
+                <h2 class="section-title">Tournament Champions & Records</h2>
+                <p class="section-subtitle">Celebrate our recent tournament winners and record-breaking performances.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card" style="padding: 2rem;">
+                    <h3 style="color: var(--accent-primary); margin-bottom: 1rem; font-size: 1.1rem;">2025 Summer Classical Champion</h3>
+                    <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=80&q=80" alt="Champion" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                        <div>
+                            <h4 style="font-weight: 600;">Grandmaster Adrian Karpov</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary);">Score: 8.5/10 | Rating Performance: 2750</p>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;">Dominant performance with 3 consecutive wins. First perfect endgame conversion record in club history.</p>
+                    <a href="#" class="btn btn-secondary" style="width: 100%; text-align: center;">View Games</a>
+                </div>
+
+                <div class="card" style="padding: 2rem;">
+                    <h3 style="color: var(--accent-primary); margin-bottom: 1rem; font-size: 1.1rem;">Youngest Tournament Winner</h3>
+                    <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80" alt="Champion" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                        <div>
+                            <h4 style="font-weight: 600;">Sophie Mitchell (Age 12)</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary);">U-14 Championship | 7/9 Points</p>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;">Youngest ever winner of an open category tournament. Remarkable strategic maturity for her age.</p>
+                    <a href="#" class="btn btn-secondary" style="width: 100%; text-align: center;">View Games</a>
+                </div>
+
+                <div class="card" style="padding: 2rem;">
+                    <h3 style="color: var(--accent-primary); margin-bottom: 1rem; font-size: 1.1rem;">Blitz Speed Record</h3>
+                    <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+                        <img src="https://images.unsplash.com/photo-1517654443271-a3a7417b4b0f?auto=format&fit=crop&w=80&q=80" alt="Champion" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                        <div>
+                            <h4 style="font-weight: 600;">IM Marcus Sterling</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary);">Blitz Arena 2025 | 11/11 Wins</p>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;">Perfect blitz tournament performance. Undefeated 11-game streak with average game time 2 minutes.</p>
+                    <a href="#" class="btn btn-secondary" style="width: 100%; text-align: center;">View Games</a>
+                </div>
+
+                <div class="card" style="padding: 2rem;">
+                    <h3 style="color: var(--accent-primary); margin-bottom: 1rem; font-size: 1.1rem;">Comeback Victory</h3>
+                    <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+                        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=80&q=80" alt="Champion" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                        <div>
+                            <h4 style="font-weight: 600;">FM Diana Rossi</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary);">Rapid Cup 2025 | +3 Points Recovery</p>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;">Legendary comeback from 0-3 deficit to win tournament. Shows resilience and superior endgame technique.</p>
+                    <a href="#" class="btn btn-secondary" style="width: 100%; text-align: center;">View Games</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50,15 L53,23 L61,23 L55,28 L57,36 L50,31 L43,36 L45,28 L39,23 L47,23 Z" />
+                        <path d="M35,40 L65,40 L62,48 L38,48 Z" />
+                        <rect x="42" y="48" width="16" height="24" rx="2" />
+                        <path d="M30,76 L70,76 L66,84 L34,84 Z" />
+                        <rect x="25" y="84" width="50" height="4" />
+                    </svg>
+                    <div class="logo-text" style="font-size: 1.25rem;">CHESS<span class="logo-accent" style="font-size: 1.25rem;">MASTERS</span></div>
+                </a>
+                <p class="footer-desc">A prestigious international club fostering competition, strategy, and intellectual excellence since 1998.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Explore</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Club</a></li>
+                    <li><a href="tournaments.html">Tournaments</a></li>
+                    <li><a href="coaching.html">Coaching Pathways</a></li>
+                    <li><a href="membership.html">Membership Plans</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog & Strategy</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="coming-soon.html">FIDE Rules</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Grandmaster HQ</h4>
+                <div class="footer-contact">
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>12 Royal Chess St, Grandmaster District, London, UK</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+44 (20) 7946 0958</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>office@chessmasters.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Chess Masters Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="join-club-modal">
+        <div class="modal-content">
+            <span class="modal-close"><i class="fas fa-times"></i></span>
+            <h3 class="modal-title">Join Chess Masters</h3>
+            <p class="modal-subtitle">Enroll as a player in our community to unlock complete member privileges.</p>
+            <form>
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Select Membership Plan</label>
+                    <select class="form-control">
+                        <option>Aspirant Plan ($29/mo)</option>
+                        <option>Contender Plan ($59/mo)</option>
+                        <option>Championship Plan ($99/mo)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Enrollment</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="register-tournament-modal">
+        <div class="modal-content">
+            <span class="modal-close"><i class="fas fa-times"></i></span>
+            <h3 class="modal-title">Tournament Registration</h3>
+            <p class="modal-subtitle">Reserve your seat. Matches require official check-in 30 mins before pairing.</p>
+            <form>
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">FIDE ID (Optional)</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Select Tournament</label>
+                    <select class="form-control">
+                        <option>Summer Classical Open (July 15)</option>
+                        <option>Grandmaster Blitz Arena (August 02)</option>
+                        <option>Under-16 Masters Challenge (August 12)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-premium" style="width: 100%;">Register & Check-In</button>
+            </form>
+        </div>
+    </div>
+
+    <button id="scroll-to-top-btn" class="scroll-top-btn" title="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

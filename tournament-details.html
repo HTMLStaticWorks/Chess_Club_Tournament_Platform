@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Classical Open - Chess Masters</title>
+    <meta name="description" content="View rules, schedules, prizes, and venue info for the Summer Classical Open at Chess Masters Club. Register online today.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    <!-- Open Graph / SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chessmasters.com/">
+    <meta property="og:image" content="assets/images/hero-1.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Site Header -->
+    <header id="main-header">
+        <div class="header-container container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50,15 L53,23 L61,23 L55,28 L57,36 L50,31 L43,36 L45,28 L39,23 L47,23 Z" />
+                    <path d="M35,40 L65,40 L62,48 L38,48 Z" />
+                    <rect x="42" y="48" width="16" height="24" rx="2" />
+                    <path d="M30,76 L70,76 L66,84 L34,84 Z" />
+                    <rect x="25" y="84" width="50" height="4" />
+                </svg>
+                <div class="logo-text">CHESS<span class="logo-accent">MASTERS</span></div>
+            </a>
+
+            <nav class="nav-menu" id="primary-navigation">
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle">
+                        Home <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="index.html" class="nav-dropdown-item">Masters Of Strategy</a>
+                        <a href="home-2.html" class="nav-dropdown-item">Championship Mindset</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="tournaments.html" class="nav-link active">Tournaments</a>
+                <a href="coaching.html" class="nav-link">Coaching</a>
+                <a href="membership.html" class="nav-link">Membership</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <!-- Mobile Theme & RTL Toggles (only visible in mobile menu) -->
+                <div class="nav-menu-controls">
+                    <button class="control-btn theme-toggle-btn" title="Toggle Theme"><i class="fas fa-sun"></i></button>
+                    <button class="control-btn rtl-toggle-btn" title="Toggle RTL"><i class="fas fa-right-left"></i></button>
+                </div>
+            <!-- Mobile Join Club (last in menu) -->
+            <div class="nav-menu-join-btn" style="display:none;">
+                <a href="signup.html" class="btn btn-primary" style="width:100%; text-align:center;">Join Club</a>
+            </div>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="control-btn theme-toggle-btn" title="Toggle Theme"><i class="fas fa-sun"></i></button>
+                <button class="control-btn rtl-toggle-btn" title="Toggle RTL"><i class="fas fa-right-left"></i></button>
+                <a href="signup.html" class="btn btn-primary">Join Club</a>
+                <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Subpage Hero -->
+    <section class="hero" style="min-height: auto; padding: 160px 0 80px 0; background-color: var(--bg-secondary);">
+        <div class="container grid-2">
+            <div>
+                <span class="hero-tag">FIDE RATED EVENT</span>
+                <h1 style="margin-bottom: 1rem; font-size: 3rem;">Summer Classical Open 2026</h1>
+                <p style="margin-bottom: 2rem;">9-Round Swiss tournament compliant with standard FIDE time-controls. Registration fee includes notation booklets, custom pencils, and arbiter review.</p>
+                <a href="#" class="btn btn-premium" data-open-modal="register-tournament-modal">Register for this Event</a>
+            </div>
+            <div class="card" style="padding: 2.5rem;">
+                <h3 style="margin-bottom: 1.5rem; font-family: var(--font-accent);">Event Summary</h3>
+                <ul class="pricing-features" style="gap: 0.8rem;">
+                    <li><i class="fas fa-calendar-alt"></i> <strong>Dates:</strong> July 15 - July 18, 2026</li>
+                    <li><i class="fas fa-chess-board"></i> <strong>Time Control:</strong> 90 mins + 30 sec / move</li>
+                    <li><i class="fas fa-trophy"></i> <strong>Prize Fund:</strong> $5,000 (Guaranteed)</li>
+                    <li><i class="fas fa-users"></i> <strong>Capacity:</strong> 120 players max</li>
+                    <li><i class="fas fa-id-card"></i> <strong>FIDE Rated:</strong> Classical Rating updates</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournament Details Content -->
+    <section id="event-details-body">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Info Section -->
+                <div>
+                    <h2 style="margin-bottom: 2rem;">Event Schedule</h2>
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div class="card" style="padding: 1.5rem 2rem;">
+                            <h4 style="color: var(--accent-primary); margin-bottom: 0.25rem;">Wednesday, July 15</h4>
+                            <p><strong>09:00 AM:</strong> Player Check-in & Pairing verification</p>
+                            <p><strong>10:00 AM:</strong> Round 1 starts</p>
+                            <p><strong>04:00 PM:</strong> Round 2 starts</p>
+                        </div>
+                        <div class="card" style="padding: 1.5rem 2rem;">
+                            <h4 style="color: var(--accent-primary); margin-bottom: 0.25rem;">Thursday, July 16</h4>
+                            <p><strong>10:00 AM:</strong> Round 3 starts</p>
+                            <p><strong>04:00 PM:</strong> Round 4 starts</p>
+                        </div>
+                        <div class="card" style="padding: 1.5rem 2rem;">
+                            <h4 style="color: var(--accent-primary); margin-bottom: 0.25rem;">Friday, July 17</h4>
+                            <p><strong>10:00 AM:</strong> Round 5 starts</p>
+                            <p><strong>04:00 PM:</strong> Round 6 starts</p>
+                        </div>
+                        <div class="card" style="padding: 1.5rem 2rem;">
+                            <h4 style="color: var(--accent-primary); margin-bottom: 0.25rem;">Saturday, July 18</h4>
+                            <p><strong>09:00 AM:</strong> Round 7 starts</p>
+                            <p><strong>02:00 PM:</strong> Round 8 starts</p>
+                            <p><strong>07:00 PM:</strong> Closing Ceremonies & Prizes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prize & rules Section -->
+                <div>
+                    <h2 style="margin-bottom: 2rem;">Prize Structure</h2>
+                    <table class="comparison-table" style="margin-bottom: 4rem;">
+                        <thead>
+                            <tr>
+                                <th>Category Placement</th>
+                                <th>Prize Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="feature-col">1st Place Overall</td>
+                                <td style="color: var(--accent-primary); font-weight: 600;">$2,000 + Trophy</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-col">2nd Place Overall</td>
+                                <td style="color: var(--accent-primary); font-weight: 600;">$1,000</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-col">3rd Place Overall</td>
+                                <td style="color: var(--accent-primary); font-weight: 600;">$500</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-col">Best U2000 Rating</td>
+                                <td style="color: var(--accent-primary); font-weight: 600;">$500</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-col">Best Junior (Under-18)</td>
+                                <td style="color: var(--accent-primary); font-weight: 600;">$500 + Medal</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-col">Best Senior (Over-50)</td>
+                                <td style="color: var(--accent-primary); font-weight: 600;">$500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2 style="margin-bottom: 2rem;">Rules & Regulations</h2>
+                    <div class="faq-accordion">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Notation Requirements</span>
+                                <i class="fas fa-chevron-down faq-icon"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Standard algebraic notation is mandatory. Sheets must be updated move-by-move. Failure to maintain a notation sheet leads to loss of claiming draw rights.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Default / Late Policy</span>
+                                <i class="fas fa-chevron-down faq-icon"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Players must arrive at the board within 30 minutes of the round start. Beyond 30 minutes, the match is defaulted and the opponent is awarded 1 point.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Anti-Cheating Safeguards</span>
+                                <i class="fas fa-chevron-down faq-icon"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>No electronic devices, smartwatches, or phones are allowed in the tournament area. Random scans will be executed before round pairing check-ins.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue & Map -->
+    <section id="venue-details" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Location</span>
+                <h2 class="section-title">The Grandmaster Venue</h2>
+                <p class="section-subtitle">Comfortable, air-conditioned playing halls with dedicated silent spaces for players.</p>
+            </div>
+
+            <div class="map-container">
+                <div class="map-mock-bg" style="background-image: url('assets/images/hero-1.png');"></div>
+                <div class="map-card">
+                    <h4 style="font-family: var(--font-accent); color: var(--accent-primary); margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt"></i> GRANDMASTER HQ</h4>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;">12 Royal Chess St, Grandmaster District, London, UK</p>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary);">Direct connections via Tube. Parking spaces available inside the yard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50,15 L53,23 L61,23 L55,28 L57,36 L50,31 L43,36 L45,28 L39,23 L47,23 Z" />
+                        <path d="M35,40 L65,40 L62,48 L38,48 Z" />
+                        <rect x="42" y="48" width="16" height="24" rx="2" />
+                        <path d="M30,76 L70,76 L66,84 L34,84 Z" />
+                        <rect x="25" y="84" width="50" height="4" />
+                    </svg>
+                    <div class="logo-text" style="font-size: 1.25rem;">CHESS<span class="logo-accent" style="font-size: 1.25rem;">MASTERS</span></div>
+                </a>
+                <p class="footer-desc">A prestigious international club fostering competition, strategy, and intellectual excellence since 1998.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Explore</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Club</a></li>
+                    <li><a href="tournaments.html">Tournaments</a></li>
+                    <li><a href="coaching.html">Coaching Pathways</a></li>
+                    <li><a href="membership.html">Membership Plans</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog & Strategy</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="coming-soon.html">FIDE Rules</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Grandmaster HQ</h4>
+                <div class="footer-contact">
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>12 Royal Chess St, Grandmaster District, London, UK</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+44 (20) 7946 0958</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>office@chessmasters.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Chess Masters Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="join-club-modal">
+        <div class="modal-content">
+            <span class="modal-close"><i class="fas fa-times"></i></span>
+            <h3 class="modal-title">Join Chess Masters</h3>
+            <p class="modal-subtitle">Enroll as a player in our community to unlock complete member privileges.</p>
+            <form>
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Select Membership Plan</label>
+                    <select class="form-control">
+                        <option>Aspirant Plan ($29/mo)</option>
+                        <option>Contender Plan ($59/mo)</option>
+                        <option>Championship Plan ($99/mo)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Enrollment</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="register-tournament-modal">
+        <div class="modal-content">
+            <span class="modal-close"><i class="fas fa-times"></i></span>
+            <h3 class="modal-title">Tournament Registration</h3>
+            <p class="modal-subtitle">Reserve your seat. Matches require official check-in 30 mins before pairing.</p>
+            <form>
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">FIDE ID (Optional)</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Select Tournament</label>
+                    <select class="form-control">
+                        <option>Summer Classical Open (July 15)</option>
+                        <option>Grandmaster Blitz Arena (August 02)</option>
+                        <option>Under-16 Masters Challenge (August 12)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-premium" style="width: 100%;">Register & Check-In</button>
+            </form>
+        </div>
+    </div>
+
+    <button id="scroll-to-top-btn" class="scroll-top-btn" title="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
