@@ -304,7 +304,6 @@ p {
 
 .nav-dropdown-item:hover,
 .nav-dropdown-item.active {
-    background-color: var(--bg-card);
     color: var(--accent-primary);
 }
 
@@ -588,7 +587,8 @@ section {
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding-top: 4rem; /* Extra space to clear the absolute-positioned badge */
+    padding-top: 4rem;
+    /* Extra space to clear the absolute-positioned badge */
 }
 
 
@@ -604,7 +604,8 @@ section {
     padding: 0.35rem 0.85rem;
     border-radius: 20px;
     letter-spacing: 1px;
-    white-space: nowrap; /* Prevent badge text from wrapping to second line */
+    white-space: nowrap;
+    /* Prevent badge text from wrapping to second line */
 }
 
 .tournament-meta {
@@ -934,7 +935,8 @@ section {
 }
 
 .comparison-table td i.fa-times {
-    color: rgba(255, 255, 255, 0.2);
+    color: #ef4444;
+    opacity: 1;
 }
 
 /* Gallery Layout */
@@ -1662,7 +1664,7 @@ footer {
     }
 
     /* Center the lone 3rd card in ANY grid-3 at tablet (2-column layout) */
-    .grid-3 > *:last-child:nth-child(odd) {
+    .grid-3>*:last-child:nth-child(odd) {
         grid-column: 1 / -1;
         max-width: 50%;
         margin: 0 auto;
@@ -1721,7 +1723,7 @@ footer {
     }
 
     /* At mobile (1 column), reset the centered 3rd card to full width */
-    .grid-3 > *:last-child:nth-child(odd) {
+    .grid-3>*:last-child:nth-child(odd) {
         grid-column: auto;
         max-width: 100%;
         margin: 0;
@@ -1853,8 +1855,9 @@ html[dir="rtl"] .comparison-table td:last-child {
     text-align: left;
 }
 
-html[dir="rtl"] .faq-question {
-    flex-direction: row-reverse;
+html[dir="rtl"] .faq-question,
+html[dir="rtl"] .faq-answer {
+    text-align: right;
 }
 
 html[dir="rtl"] .modal-close {
@@ -1874,4 +1877,193 @@ html[dir="rtl"] .contact-detail-icon {
 html[dir="rtl"] .footer-contact-item i {
     margin-right: 0;
     margin-left: 0.75rem;
+}
+
+/* Fix Card Alignment & Equal Heading Space */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card>h3,
+.card>.card-title {
+    display: block;
+    min-height: 4.5rem;
+}
+
+/* Fix Tournament Header Image Full-Width */
+
+.tournament-card .tournament-img-wrapper {
+    margin: -4rem -2.5rem 1.5rem -2.5rem !important;
+    border-radius: 0 !important;
+}
+
+
+
+
+@media (max-width: 1024px) {
+
+    .blog-grid,
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .gallery-grid>*:nth-child(9) {
+        grid-column: 1 / -1;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .blog-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .gallery-grid>*:nth-child(9) {
+        max-width: 100%;
+    }
+
+    .card {
+        padding-bottom: 2.5rem !important;
+    }
+
+    .card h3,
+    .card .card-title {
+        min-height: auto !important;
+        padding-bottom: 0.5rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    #coaching-workshops .grid-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.nav-actions .control-btn {
+    display: flex !important;
+}
+
+#hall-of-fame .card h3 {
+    min-height: auto !important;
+    text-align: left !important;
+}
+
+.tournament-badge {
+    margin-bottom: 1rem !important;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    #hybrid-options .grid-3 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#success-stories .card h3 {
+    min-height: auto !important;
+}
+
+#success-stories .card {
+    justify-content: space-between;
+}
+
+#legacy .card h3,
+#leadership .card h3,
+#about-intro .card h3 {
+    min-height: auto !important;
+}
+
+#leadership .card img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#achievements-timeline .card h3,
+#leadership-team .card h3,
+#core-values .card h3 {
+    min-height: auto !important;
+}
+
+#leadership-team .card img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+/* Final User Adjustments */
+@media (max-width: 768px) {
+    .tournament-badge {
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem !important;
+        display: inline-block !important;
+    }
+}
+
+#core-values .card h3 {
+    min-height: auto !important;
+    padding-bottom: 1.5rem !important;
+    margin-bottom: 0 !important;
+}
+
+#featured-champions .card img {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+}
+
+@media (max-width: 1024px) {
+    .nav-dropdown-toggle {
+        display: none !important;
+    }
+
+    .nav-dropdown-menu {
+        display: flex !important;
+        flex-direction: column;
+        position: static !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .nav-dropdown-item {
+        color: var(--text-secondary) !important;
+        font-weight: 500 !important;
+        font-size: 1.1rem !important;
+        padding: 0.75rem 0 !important;
+    }
+
+    .nav-dropdown-item:hover,
+    .nav-dropdown-item.active {
+        color: var(--accent-primary) !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav-actions .control-btn {
+        display: none !important;
+    }
+}
+.tournament-badge { display: none !important; }
+
+@media (max-width: 1024px) {
+    .nav-dropdown-item { position: relative !important; display: inline-block; }
+    .nav-dropdown-item::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background-color: var(--accent-primary); transition: width var(--transition-fast); }
+    html[dir="rtl"] .nav-dropdown-item::after { left: auto; right: 0; }
+    .nav-dropdown-item:hover::after, .nav-dropdown-item.active::after { width: 100%; }
 }
