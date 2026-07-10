@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="robots" content="index, follow">
     <!-- FontAwesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
@@ -62,6 +62,12 @@
             color: var(--accent-secondary);
         }
     </style>
+    <style>
+        #hero-home2 h1,
+        #hero-home2 p {
+            color: var(--text-primary) !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -70,13 +76,7 @@
     <header id="main-header">
         <div class="header-container container">
             <a href="index.html" class="logo">
-                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M50,15 L53,23 L61,23 L55,28 L57,36 L50,31 L43,36 L45,28 L39,23 L47,23 Z" />
-                    <path d="M35,40 L65,40 L62,48 L38,48 Z" />
-                    <rect x="42" y="48" width="16" height="24" rx="2" />
-                    <path d="M30,76 L70,76 L66,84 L34,84 Z" />
-                    <rect x="25" y="84" width="50" height="4" />
-                </svg>
+                <img src="assets/images/logo.png" alt="Chess Masters Logo" style="width: 50px; height: auto;">
                 <div class="logo-text">CHESS<span class="logo-accent">MASTERS</span></div>
             </a>
 
@@ -124,7 +124,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="hero-home2">
+    <section class="hero" id="hero-home2" style="background-color: var(--bg-secondary);">
         <div class="chess-svg-container">
             <svg width="100%" height="100%" viewBox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg">
                 <!-- Move Path Trail representation -->
@@ -144,82 +144,10 @@
                 </div>
             </div>
 
-            <!-- CSS Grid Interactive Chessboard Graphic -->
-            <div>
-                <div class="board-container">
-                    <!-- Row 8 -->
-                    <div class="board-square light-sq"><i class="fas fa-chess-rook"></i></div>
-                    <div class="board-square dark-sq"><i class="fas fa-chess-knight"></i></div>
-                    <div class="board-square light-sq"><i class="fas fa-chess-bishop"></i></div>
-                    <div class="board-square dark-sq"><i class="fas fa-chess-queen"></i></div>
-                    <div class="board-square light-sq"><i class="fas fa-chess-king"></i></div>
-                    <div class="board-square dark-sq"><i class="fas fa-chess-bishop"></i></div>
-                    <div class="board-square light-sq"></div>
-                    <div class="board-square dark-sq"><i class="fas fa-chess-rook"></i></div>
-                    <!-- Row 7 -->
-                    <div class="board-square dark-sq"><i class="fas fa-chess-pawn"></i></div>
-                    <div class="board-square light-sq"><i class="fas fa-chess-pawn"></i></div>
-                    <div class="board-square dark-sq"><i class="fas fa-chess-pawn"></i></div>
-                    <div class="board-square light-sq"></div>
-                    <div class="board-square dark-sq"></div>
-                    <div class="board-square light-sq"><i class="fas fa-chess-pawn"></i></div>
-                    <div class="board-square dark-sq"><i class="fas fa-chess-pawn"></i></div>
-                    <div class="board-square light-sq"><i class="fas fa-chess-pawn"></i></div>
-                    <!-- Row 6 -->
-                    <div class="board-square light-sq"></div>
-                    <div class="board-square dark-sq"></div>
-                    <div class="board-square light-sq"></div>
-                    <div class="board-square dark-sq"></div>
-                    <div class="board-square light-sq"></div>
-                    <div class="board-square dark-sq"><i class="fas fa-chess-knight"></i></div>
-                    <div class="board-square light-sq"></div>
-                    <div class="board-square dark-sq"></div>
-                    <!-- Row 5 -->
-                    <div class="board-square dark-sq"></div>
-                    <div class="board-square light-sq"></div>
-                    <div class="board-square dark-sq"></div>
-                    <div class="board-square light-sq"><i class="fas fa-chess-pawn"></i></div>
-                    <div class="board-square dark-sq"><i class="fas fa-chess-pawn"></i></div>
-                    <div class="board-square light-sq"></div>
-                    <div class="board-square dark-sq"></div>
-                    <div class="board-square light-sq"></div>
-                    <!-- Row 4 -->
-                    <div class="board-square light-sq"></div>
-                    <div class="board-square dark-sq"></div>
-                    <div class="board-square light-sq"></div>
-                    <div class="board-square dark-sq"></div>
-                    <div class="board-square light-sq"></div>
-                    <div class="board-square dark-sq"></div>
-                    <div class="board-square light-sq"></div>
-                    <div class="board-square dark-sq"></div>
-                    <!-- Row 3 -->
-                    <div class="board-square dark-sq"></div>
-                    <div class="board-square light-sq"></div>
-                    <div class="board-square dark-sq"><i class="fas fa-chess-knight"></i></div>
-                    <div class="board-square light-sq"></div>
-                    <div class="board-square dark-sq"></div>
-                    <div class="board-square light-sq"></div>
-                    <div class="board-square dark-sq"></div>
-                    <div class="board-square light-sq"></div>
-                    <!-- Row 2 -->
-                    <div class="board-square light-sq"><i class="fas fa-chess-pawn"></i></div>
-                    <div class="board-square dark-sq"><i class="fas fa-chess-pawn"></i></div>
-                    <div class="board-square light-sq"></div>
-                    <div class="board-square dark-sq"></div>
-                    <div class="board-square light-sq"></div>
-                    <div class="board-square dark-sq"><i class="fas fa-chess-pawn"></i></div>
-                    <div class="board-square light-sq"><i class="fas fa-chess-pawn"></i></div>
-                    <div class="board-square dark-sq"><i class="fas fa-chess-pawn"></i></div>
-                    <!-- Row 1 -->
-                    <div class="board-square dark-sq"><i class="fas fa-chess-rook"></i></div>
-                    <div class="board-square light-sq"></div>
-                    <div class="board-square dark-sq"><i class="fas fa-chess-bishop"></i></div>
-                    <div class="board-square light-sq"><i class="fas fa-chess-queen"></i></div>
-                    <div class="board-square light-sq"><i class="fas fa-chess-king"></i></div>
-                    <div class="board-square dark-sq"><i class="fas fa-chess-bishop"></i></div>
-                    <div class="board-square light-sq"><i class="fas fa-chess-knight"></i></div>
-                    <div class="board-square dark-sq"><i class="fas fa-chess-rook"></i></div>
-                </div>
+            <!-- Hero Image -->
+            <div style="display: flex; justify-content: center; align-items: center; padding-left: 2rem;">
+                <img src="assets/images/home2-hero.jpg" alt="Chess Master Tournament"
+                    style="width: 100%; max-width: 600px; height: auto; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.4);">
             </div>
         </div>
     </section>
@@ -513,9 +441,12 @@
                     <p style="margin-bottom: 1.5rem;">Start your chess journey with fundamental rules, basic tactics,
                         and piece movements. Perfect for all ages.</p>
                     <ul class="pricing-features" style="margin-bottom: 1.5rem;">
-                        <li><i class="fas fa-check-circle"></i> Rules & Board Basics</li>
-                        <li><i class="fas fa-check-circle"></i> Tactical Motives</li>
-                        <li><i class="fas fa-check-circle"></i> Simple Checkmates</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--accent-primary);"></i> Rules & Board
+                            Basics</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--accent-primary);"></i> Tactical Motives
+                        </li>
+                        <li><i class="fas fa-check-circle" style="color: var(--accent-primary);"></i> Simple Checkmates
+                        </li>
                     </ul>
                     <a href="coaching.html" class="btn btn-secondary" style="width: 100%;">Enroll Now</a>
                 </div>
@@ -531,9 +462,12 @@
                     <p style="margin-bottom: 1.5rem;">Develop strategic thinking and opening knowledge. Build a solid
                         foundation for competitive play.</p>
                     <ul class="pricing-features" style="margin-bottom: 1.5rem;">
-                        <li><i class="fas fa-check-circle"></i> Opening Repertoire</li>
-                        <li><i class="fas fa-check-circle"></i> Positional Strategy</li>
-                        <li><i class="fas fa-check-circle"></i> Endgame Fundamentals</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--accent-primary);"></i> Opening Repertoire
+                        </li>
+                        <li><i class="fas fa-check-circle" style="color: var(--accent-primary);"></i> Positional
+                            Strategy</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--accent-primary);"></i> Endgame
+                            Fundamentals</li>
                     </ul>
                     <a href="coaching.html" class="btn btn-secondary" style="width: 100%;">Enroll Now</a>
                 </div>
@@ -549,9 +483,12 @@
                     <p style="margin-bottom: 1.5rem;">Master complex positions and compete at high levels. Prepare for
                         FIDE norms and titles.</p>
                     <ul class="pricing-features" style="margin-bottom: 1.5rem;">
-                        <li><i class="fas fa-check-circle"></i> Deep Calculation</li>
-                        <li><i class="fas fa-check-circle"></i> Psychological Preparation</li>
-                        <li><i class="fas fa-check-circle"></i> Neural Engine Training</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--accent-primary);"></i> Deep Calculation
+                        </li>
+                        <li><i class="fas fa-check-circle" style="color: var(--accent-primary);"></i> Psychological
+                            Preparation</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--accent-primary);"></i> Neural Engine
+                            Training</li>
                     </ul>
                     <a href="coaching.html" class="btn btn-primary" style="width: 100%;">Apply for Elite</a>
                 </div>
@@ -567,9 +504,12 @@
                     <p style="margin-bottom: 1.5rem;">Specially designed for players under 18. Build cognitive skills
                         while having fun competing.</p>
                     <ul class="pricing-features" style="margin-bottom: 1.5rem;">
-                        <li><i class="fas fa-check-circle"></i> Age-Appropriate Content</li>
-                        <li><i class="fas fa-check-circle"></i> School Tournament Prep</li>
-                        <li><i class="fas fa-check-circle"></i> Fun Learning Activities</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--accent-primary);"></i> Age-Appropriate
+                            Content</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--accent-primary);"></i> School Tournament
+                            Prep</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--accent-primary);"></i> Fun Learning
+                            Activities</li>
                     </ul>
                     <a href="coaching.html" class="btn btn-secondary" style="width: 100%;">Enroll Child</a>
                 </div>
@@ -582,13 +522,7 @@
         <div class="container footer-grid">
             <div>
                 <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
-                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M50,15 L53,23 L61,23 L55,28 L57,36 L50,31 L43,36 L45,28 L39,23 L47,23 Z" />
-                        <path d="M35,40 L65,40 L62,48 L38,48 Z" />
-                        <rect x="42" y="48" width="16" height="24" rx="2" />
-                        <path d="M30,76 L70,76 L66,84 L34,84 Z" />
-                        <rect x="25" y="84" width="50" height="4" />
-                    </svg>
+                    <img src="assets/images/logo.png" alt="Chess Masters Logo" style="width: 50px; height: auto;">
                     <div class="logo-text" style="font-size: 1.25rem;">CHESS<span class="logo-accent"
                             style="font-size: 1.25rem;">MASTERS</span></div>
                 </a>
@@ -596,9 +530,10 @@
                     intellectual excellence since 1998.</p>
                 <div class="footer-socials">
                     <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
                     <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
 
@@ -630,7 +565,7 @@
                         <span>12 Royal Chess St, Grandmaster District, London, UK</span>
                     </div>
                     <div class="footer-contact-item">
-                        <i class="fas fa-phone-alt"></i>
+                        <i class="fas fa-phone"></i>
                         <span>+44 (20) 7946 0958</span>
                     </div>
                     <div class="footer-contact-item">

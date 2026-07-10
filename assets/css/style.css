@@ -62,7 +62,7 @@ html {
 
 body {
     background-color: var(--bg-primary);
-    color: var(--text-primary);
+    color: #F8FAFC;
     font-family: var(--font-body);
     line-height: 1.6;
     overflow-x: hidden;
@@ -380,6 +380,7 @@ p {
 .btn-premium:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+    color: #FFF;
 }
 
 /* Hero Section */
@@ -994,7 +995,7 @@ section {
 .gallery-item-title {
     font-family: var(--font-heading);
     font-size: 1.25rem;
-    color: var(--text-primary);
+    color: #F8FAFC;
     margin-bottom: 0.5rem;
 }
 
@@ -1858,12 +1859,12 @@ html[dir="rtl"] .pricing-features li {
     gap: 0.75rem;
 }
 
-html[dir="rtl"] .comparison-table th,
+html[dir="rtl"] html[dir="rtl"] .comparison-table th,
 html[dir="rtl"] .comparison-table td {
     text-align: right;
 }
 
-html[dir="rtl"] .comparison-table th:last-child,
+html[dir="rtl"] html[dir="rtl"] .comparison-table th:last-child,
 html[dir="rtl"] .comparison-table td:last-child {
     text-align: left;
 }
@@ -2090,4 +2091,12 @@ html[dir="rtl"] .footer-contact-item i {
     .nav-dropdown-item::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background-color: var(--accent-primary); transition: width var(--transition-fast); }
     html[dir="rtl"] .nav-dropdown-item::after { left: auto; right: 0; }
     .nav-dropdown-item:hover::after, .nav-dropdown-item.active::after { width: 100%; }
+}
+
+/* Hero Content Colors */
+.hero h1, .hero-content h1 {
+    color: #ffffff !important;
+}
+.hero p, .hero-content p {
+    color: rgba(255, 255, 255, 0.9) !important;
 }

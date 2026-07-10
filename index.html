@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="robots" content="index, follow">
     <!-- FontAwesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -29,14 +29,7 @@
     <header id="main-header">
         <div class="header-container container">
             <a href="index.html" class="logo">
-                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <!-- King Chess Piece Silhouette SVG -->
-                    <path d="M50,15 L53,23 L61,23 L55,28 L57,36 L50,31 L43,36 L45,28 L39,23 L47,23 Z" />
-                    <path d="M35,40 L65,40 L62,48 L38,48 Z" />
-                    <rect x="42" y="48" width="16" height="24" rx="2" />
-                    <path d="M30,76 L70,76 L66,84 L34,84 Z" />
-                    <rect x="25" y="84" width="50" height="4" />
-                </svg>
+                <img src="assets/images/logo.png" alt="Chess Masters Logo" style="width: 50px; height: auto;">
                 <div class="logo-text">CHESS<span class="logo-accent">MASTERS</span></div>
             </a>
 
@@ -84,7 +77,8 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="hero-home">
+    <section class="hero" id="hero-home"
+        style="background-image: url('assets/images/home1-hero.jpg'); background-size: cover; background-position: center; background-blend-mode: overlay; background-color: rgba(0, 0, 0, 0.7);">
         <!-- SVG Path Trails for Chess Pieces -->
         <div class="chess-svg-container">
             <svg width="100%" height="100%" viewBox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg">
@@ -93,22 +87,15 @@
             </svg>
         </div>
 
-        <div class="container grid-2">
-            <div class="hero-content">
+        <div class="container"
+            style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; height: 100%;">
+            <div class="hero-content"
+                style="max-width: 800px; display: flex; flex-direction: column; align-items: center;">
                 <h1>Every Great Move Begins With A Better Strategy</h1>
                 <p>Join a thriving chess community featuring FIDE-rated tournaments, structured coaching programs, and
                     competitive opportunities for players of all levels.</p>
-                <div class="hero-btns">
-                    <a href="tournaments.html" class="btn btn-secondary">Explore Tournaments</a>
-                </div>
-            </div>
-            <div class="legacy-img-wrapper" style="z-index: 2;">
-                <img src="assets/images/hero-1.png" alt="Championship Chess Tournament Hall" class="legacy-img">
-                <div class="legacy-overlay">
-                    <h3 style="font-family: var(--font-accent); color: var(--accent-secondary); letter-spacing: 2px;">
-                        WORLD CHAMPIONSHIP VENUE</h3>
-                    <p style="color: #F8FAFC; font-size: 0.9rem;">Experience luxury clubrooms and professional standard
-                        FIDE tournament halls.</p>
+                <div class="hero-btns" style="justify-content: center;">
+                    <a href="tournaments.html" class="btn btn-primary">Explore Tournaments</a>
                 </div>
             </div>
         </div>
@@ -398,13 +385,7 @@
         <div class="container footer-grid">
             <div>
                 <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
-                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M50,15 L53,23 L61,23 L55,28 L57,36 L50,31 L43,36 L45,28 L39,23 L47,23 Z" />
-                        <path d="M35,40 L65,40 L62,48 L38,48 Z" />
-                        <rect x="42" y="48" width="16" height="24" rx="2" />
-                        <path d="M30,76 L70,76 L66,84 L34,84 Z" />
-                        <rect x="25" y="84" width="50" height="4" />
-                    </svg>
+                    <img src="assets/images/logo.png" alt="Chess Masters Logo" style="width: 50px; height: auto;">
                     <div class="logo-text" style="font-size: 1.25rem;">CHESS<span class="logo-accent"
                             style="font-size: 1.25rem;">MASTERS</span></div>
                 </a>
@@ -412,9 +393,10 @@
                     intellectual excellence since 1998.</p>
                 <div class="footer-socials">
                     <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
                     <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
 
@@ -446,7 +428,7 @@
                         <span>12 Royal Chess St, Grandmaster District, London, UK</span>
                     </div>
                     <div class="footer-contact-item">
-                        <i class="fas fa-phone-alt"></i>
+                        <i class="fas fa-phone"></i>
                         <span>+44 (20) 7946 0958</span>
                     </div>
                     <div class="footer-contact-item">
